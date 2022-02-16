@@ -1,18 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.43c86f1c.css",
-    "main.js": "/static/js/main.f5df0819.js",
-    "static/media/profile-image.jpg": "/static/media/profile-image.f847245148cc12cb015a.jpg",
-    "static/media/AngeloFalci.pdf": "/static/media/AngeloFalci.ffc381860e7c82ea6ce5.pdf",
-    "static/media/three-year-IT.pdf": "/static/media/three-year-IT.9e77691dcaa3cf0e8f42.pdf",
-    "static/media/three-year-EN.pdf": "/static/media/three-year-EN.6d0e0641614acb56e2e0.pdf",
-    "static/media/masterly-IT.pdf": "/static/media/masterly-IT.ab2c625e83b95e4eb4d2.pdf",
-    "static/media/masterly-EN.pdf": "/static/media/masterly-EN.0333e5acd840ff95d522.pdf",
+    "main.js": "/static/js/main.d48f8930.js",
     "static/media/bachelor.png": "/static/media/bachelor.65be75ca208718997130.png",
     "static/media/flask.svg": "/static/media/flask.ce50c4de7a6645f7643ac480405d0e9a.svg",
     "static/media/close.png": "/static/media/close.29afb4c4fdd96add278a.png",
     "static/media/suitcase.png": "/static/media/suitcase.90ca718fc94573b081c8.png",
-    "static/media/logo.png": "/static/media/logo.d7a632682a0000bfd820.png",
+    "static/media/logo.png": "/static/media/logo.9fb29559f75d5b94f6cc.png",
     "static/media/telegram.png": "/static/media/telegram.65db574b9f74a1d788ea.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/illustration.svg": "/static/media/illustration.cf4b7a67f23b684549c4f797c62b527a.svg",
@@ -21,9 +15,9 @@
     "static/media/typescript-icon.svg": "/static/media/typescript-icon.17d5e87eac2c9d1dc722ce1e0b60d5df.svg",
     "static/media/react-icon.svg": "/static/media/react-icon.f1484e295933af0e748d6a01b05a8361.svg",
     "static/media/docker.svg": "/static/media/docker.ff05cb013fd03587de26546b000de939.svg",
-    "index.html": "/index.html",
     "static/media/phone-icon.svg": "/static/media/phone-icon.91617f27ac814ef5f29b533ab3d256ec.svg",
     "static/media/email-icon.svg": "/static/media/email-icon.a83578f914460e952501546655b76165.svg",
+    "index.html": "/index.html",
     "static/media/python.svg": "/static/media/python.ab5b883c7057f0d1476bf89b193c1331.svg",
     "static/media/html-icon.svg": "/static/media/html-icon.ebfc51e406097a90691ab82f1aa72db3.svg",
     "static/media/css-icon.svg": "/static/media/css-icon.60a6c50d5a470990f63ee17a3bbd9178.svg",
@@ -35,10 +29,10 @@
     "static/media/external-link-icon.svg": "/static/media/external-link-icon.e5f54e725f027cf7f3e6c481893eb96f.svg",
     "static/media/windows-10.svg": "/static/media/windows-10.afea2f1c2f7e291f76e33319c63dcf62.svg",
     "main.43c86f1c.css.map": "/static/css/main.43c86f1c.css.map",
-    "main.f5df0819.js.map": "/static/js/main.f5df0819.js.map"
+    "main.d48f8930.js.map": "/static/js/main.d48f8930.js.map"
   },
   "entrypoints": [
     "static/css/main.43c86f1c.css",
-    "static/js/main.f5df0819.js"
+    "static/js/main.d48f8930.js"
   ]
 }
