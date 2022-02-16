@@ -1,6 +1,4 @@
 import { Container } from "./styles";
-
-import profileImage from "../../assets/profile-image.jpg";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
@@ -10,13 +8,11 @@ import typescriptIcon from "../../assets/typescript-icon.svg";
 import androidIcon from "../../assets/android.svg";
 import bootstrapIcon from "../../assets/bootstrap.svg";
 import dockerIcon from "../../assets/docker.svg";
-import flaskIcon from "../../assets/flask.svg";
-import mysqlIcon from "../../assets/mysql.svg";
-import pythonIcon from "../../assets/python.svg";
 import windowsIcon from "../../assets/windows-10.svg";
 import vscodeIcon from "../../assets/vscode.svg";
 import ubuntuIcon from "../../assets/ubuntu.png"; 
 import ScrollAnimation from "react-animate-on-scroll";
+import Illustration from "../../assets/illustration.svg"
 import { about } from "../../data";
 
 export function About() {
@@ -27,9 +23,6 @@ export function About() {
     { icon: typescriptIcon, name: "TypeScript" },
     { icon: cssIcon, name: "CSS" },
     { icon: htmlIcon, name: "HTML" },
-    { icon: pythonIcon, name: "Python" },
-    { icon: flaskIcon, name: "Flask" },
-    { icon: mysqlIcon, name: "SQL" },
     { icon: dockerIcon, name: "Docker" },
     { icon: bootstrapIcon, name: "Bootstrap" },
     { icon: vscodeIcon, name: "VS Code" },
@@ -78,7 +71,7 @@ export function About() {
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
           
-          <img src={profileImage} alt="Imagem de perfil" />
+          <img src={Illustration} alt="Illustration" />
         </ScrollAnimation>
       </div>
     </Container>

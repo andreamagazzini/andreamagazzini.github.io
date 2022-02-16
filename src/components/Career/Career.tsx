@@ -1,12 +1,10 @@
 import { Container } from "./styles";
-import githubIcon from "../../assets/github-icon.svg";
-import externalLinkIcon from "../../assets/external-link-icon.svg";
 import bachelor from "../../assets/bachelor.png";
 import suitcase from "../../assets/suitcase.png";
 import ScrollAnimation from "react-animate-on-scroll";
 import { career } from "../../data";
 
-export function Career() {
+export const Career = () => {
   return (
     <Container id="career">
       <h2>{career.title}</h2>
@@ -49,13 +47,6 @@ export function Career() {
                 {school.description && (
                   <p>
                     {school.description}
-                    {school.links &&
-                      school.links.map((link, index) => (
-                        <a href={link.url} target="_blank" rel="noreferrer"
-                        key={index}>
-                          {link.title}
-                        </a>
-                      ))}
                   </p>
                 )}
               </div>

@@ -1,7 +1,6 @@
 import { Container } from "./styles";
 import emailIcon from "../../assets/email-icon.svg";
 import phoneIcon from "../../assets/phone-icon.svg"
-import { Form } from "../Form/Form";
 import { contacts } from "../../data";
 
 
@@ -16,14 +15,13 @@ export function Contact(){
       <div className="contacts">
         <div>
           <img src={emailIcon} alt="Email" />
-          <a href="mailto:a.falci@live.it">a.falci@live.it</a>
+          <a href="mailto:andreamaga4@gmail.com">andreamaga4@gmail.com</a>
         </div>
         <div>
           <img src={phoneIcon} alt="Phone" />
-          <a href="tel:+393473927579">+39 347 3927579</a>
+          <a href="tel:+41763721444">+41 76 372 14 44</a>
         </div>  
       </div>
-      {/* <Form></Form> //TODO Maybe enable it in future*/}
     </Container>
   )
 }

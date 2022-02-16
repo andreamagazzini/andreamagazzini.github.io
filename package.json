@@ -1,7 +1,7 @@
 {
-  "name": "curriculum",
+  "name": "cv",
   "version": "1.0.0",
-  "homepage": "https://fangelo94.github.io/",
+  "homepage": "https://andreamagazzini.github.io/",
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.2.4",

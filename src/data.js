@@ -1,15 +1,11 @@
-import threeYearsEn from "./assets/three-year-EN.pdf";
-import threeYearsIt from "./assets/three-year-IT.pdf";
-import masterlyEn from "./assets/masterly-EN.pdf";
-import masterlyIt from "./assets/masterly-IT.pdf";
 import githubIcon from './assets/github-icon.svg'
 import externalLinkIcon from "./assets/external-link-icon.svg";
 
 export const hero = {
     hello: "Hello 👋, I'm",
-    name: "Ing. Angelo Falci",
-    title: "Full Stack Developer",
-    smallResume: "Web developer focused on Javascript, React, Python and SQL to develop both frontend and backend applications",
+    name: "Andrea Magazzini",
+    title: "Professional Software Engineer",
+    smallResume: "Dynamic, open minded and fast learner",
     contacts: "Contacts",
 }
 
@@ -43,42 +39,30 @@ export const about = {
     title: "About Me",
     mainSkills: "Here are my main skills:",
     paragraphs: [
-        "Hi, Angelo and I live in the heart of the alps, Sondrio (north of Milan), Italy. I'm passionate about programming and I'm always looking for new challenges to learn and improve my skills. I’m a very active and motivated person. My best qualities are determination and sincerity. In the other side my defects are.. wait, it is better not say my defects in a curriculum.",
-        "For the moment I work in TeamSystems, using mainly React with Redux. In my free time I develop a fullstack web application using React for frontend and Flask (Python framework) for backend. Below you can see more details about my work experience and projects!",
-        "My other hobbies are: travel, read books, board games, videogames and do a lot of sports!"]
+        "I have a BSc in Electronic Engineering, an European MSc double degree in Advanced Robotics. I studied in 3 different Universities in Italy, Norway and France and I currently work in Switzerland as Software Engineer.",
+        "Being social and get in touch with new people, from different cultures, in order to share knowledge and ideas, has always brought me inspiration and new ways of thinking.",
+        "I always try to adapt myself because I think nothing is static in this World.",
+        "Pantarei, everything flows."
+    ]
 }
 
 export const career = {
     title: "Career",
     schools: [{
-        title: "Master of Computer Science and Engineering",
-        where: "Politecnico di Milano, Italy",
+        title: "European Master on Advanced Robotics",
+        where: "Università degli studi di Genova, Italy",
         description: "Download all the details about my studies and which subjects I studied here: ",
-        when: "2016 - 2018",
-        links: [{
-            title: "IT",
-            url: masterlyIt,
-        }, {
-            title: "EN",
-            url: masterlyEn,
-        }],
+        when: "2015 - 2016"
     }, {
-        title: "Computer Science and Engineering",
-        where: "Politecnico di Milano, Italy",
+        title: "European Master on Advanced Robotics",
+        where: "Ecole Centrale de Nantes, France",
         description: "Download all the details about my studies and which subjects I studied here: ",
-        when: "2013 - 2016",
-        links: [{
-            title: "IT",
-            url: threeYearsIt,
-        }, {
-            title: "EN",
-            url: threeYearsEn,
-        }],
+        when: "2014 - 2015"
     },
     {
-        title: "Diploma in Computer Expert",
-        where: "High school ITIS Enea Mattei (Sondrio, Italy)",
-        when: "2008 - 2013"
+        title: "Bachelor's Degree in Electronic Engineering",
+        where: "Università degli studi di Genova, Italy",
+        when: "2010 - 2014"
     }],
     jobs: [{
         title: "Senior FullStack Developer",

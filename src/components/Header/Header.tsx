@@ -5,8 +5,9 @@ import { useState } from 'react'
 import { header } from "../../data"
 import logo from "../../assets/logo.png";
 
-import Curriculum from '../../assets/AngeloFalci.pdf'
-export function Header() {
+const CurriculumUrl = 'https://drive.google.com/file/d/1eIY5VDknoH6zAE7LmffbFspfd1_nN3gE/view?usp=sharing'
+
+export const Header = () => {
   const [isActive, setActive] = useState(false)
 
   function toggleTheme() {
@@ -50,7 +51,7 @@ export function Header() {
           <NavHashLink smooth to="#contacts" onClick={closeMenu}>
             {header.contacts}
           </NavHashLink>
-          <a href={Curriculum} download className="button">
+          <a href={CurriculumUrl} target="_blank" download className="button">
             CV
           </a>
         </nav>

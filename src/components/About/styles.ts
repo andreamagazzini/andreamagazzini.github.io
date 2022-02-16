@@ -53,25 +53,9 @@ export const Container = styled.section`
     font-weight: 500;
   }
   
-  
-
   .about-image{
-    text-align: center;
-   img{
-     margin-top: 2rem;
-     width: 100%;
-     filter: grayscale(1);
-     transition: filter 0.5s;
-     &:hover{
-       filter: grayscale(0);
-     }
-   }
-  }
-
-  @media only screen and (max-width: 480px) {
-    .about-image {
-      max-width: 100%;
-      margin-top: 4rem;
+    img{
+      max-width: 500px;
     }
   }
 
@@ -80,7 +64,7 @@ export const Container = styled.section`
     text-align: center;
 
     .about-image{
-      display: flex;
+      display: none;
     }
     .hard-skills{
       justify-content: center;

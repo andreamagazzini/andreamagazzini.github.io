@@ -33,11 +33,23 @@ export const Container = styled.section`
   }
 
   .hero-image{
-    img{
-      max-width: 500px;
-    }
+    text-align: center;
+   img{
+     width: 80%;
+     filter: grayscale(1);
+     transition: filter 0.5s;
+     &:hover{
+       filter: grayscale(0);
+     }
+   }
   }
 
+  @media only screen and (max-width: 480px) {
+    .hero-image {
+      max-width: 100%;
+      margin-top: 4rem;
+    }
+  }
 
   @media(max-width: 960px){
     display: block;
@@ -50,7 +62,7 @@ export const Container = styled.section`
     }
     
     .hero-image{
-      display: none;
+      display: flex;
     }
   }
 
