@@ -1,9 +1,6 @@
-import Particles from "react-tsparticles";
-import { Container } from "./styles";
+
 import { Hero } from "../Hero/Hero";
-import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
-import { Portfolio } from "../Portfolio/Portfolio";
 import { Career } from "../Career/Career";
 
 import cssIcon from "../../assets/css-icon.svg";
@@ -42,11 +39,10 @@ export function Main() {
   ];
 
   return (
-    <Container>
+    <div className="py-10 px-10 sm:px-52 space-y-52">
       <Hero />
       <Career />
-      <Portfolio />
       <Contact />
-    </Container>
+    </div>
   );
 }

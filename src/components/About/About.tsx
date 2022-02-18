@@ -29,13 +29,10 @@ export const About = () => {
     { icon: ubuntuIcon, name: "Ubuntu" },
   ];
   return (
-    <div className="mt-12 grid grid-cols-2 gap-8 justify-center sm:justify-start">
-      <div className="about-text">
+    <div className="mt-12 justify-center sm:justify-start">
+      <div>
         <ScrollAnimation animateIn="fadeInLeft">
           <h2 className="inline-block mb-8 border-b-4 border-blue-500">{about.title}</h2>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <p></p>
         </ScrollAnimation>
         {about.paragraphs.map((p, index) => (
           <ScrollAnimation
@@ -44,7 +41,7 @@ export const About = () => {
             delay={(0.4 + index / 5) * 1000}
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
-            <p className="text-3xl tracking-widest font-medium">{p}</p>
+            <p className="text-2xl tracking-widest font-medium">{p}</p>
           </ScrollAnimation>
         ))}
 

@@ -1,61 +1,39 @@
-import { Container } from "./styles";
-import githubIcon from "../../assets/github-icon.svg";
-import externalLinkIcon from "../../assets/external-link-icon.svg";
-import bachelor from "../../assets/bachelor.png";
-import close from "../../assets/close.png";
-import ScrollAnimation from "react-animate-on-scroll";
-import { projects } from "../../data";
+import ScrollAnimation from "react-animate-on-scroll"
 
 interface ICard {
-  title: string;
-  text: Array<{
-    type: string;
-    value: string;
-  }>;
-  skills: string[];
-  handleClose: Function;
+    top: React.ReactNode[],
+    header: React.ReactNode,
+    body: React.ReactNode,
+    bottom: React.ReactNode[]
 }
 
-const traslateText = (text: string) => {
-  const arrayText = text.split("*");
-  return arrayText.map((t: string, index: number) => {
-    if (index % 2 === 0) {
-      return t;
-    } else {
-      return (
-        <span key={index}>
-          <strong>{t}</strong>
-        </span>
-      );
-    }
-  });
-};
-
-export function Card({ title, text, skills, handleClose }: ICard) {
-  return (
-    <Container>
-      <div className="project">
-        <header>
-          <h1>{title}</h1>
-          <img src={close} alt="Suitcase" onClick={() => handleClose()} />
-        </header>
-        <div className="body">
-          {text.map((p, index) =>
-            p.type === "subtitle" ? (
-              <h2 key={index}>{p.value}</h2>
-            ) : (
-              <p key={index}>{traslateText(p.value)}</p>
-            )
-          )}
-          <ul className="tech-list">
-            {skills.map((skill, index) => (
-              <li>{skill}</li>
-            ))}
-          </ul>
-        </div>
-
-        <footer></footer>
-      </div>
-    </Container>
-  );
+const Card = ({ top, header, body, bottom }: ICard) => {
+    return (
+        <ScrollAnimation
+            animateIn="fadeIn"
+        >
+            <div className="h-full bg-white flex flex-col justify-between text-black p-10 rounded-lg space-y-20">
+                <div className="flex flex-col space-y-10">
+                    <div className="flex items-center justify-between">
+                        {
+                            top.map((el) => el)
+                        }
+                    </div>
+                    <div className="text-4xl font-bold">
+                        {header}
+                    </div>
+                    <div>
+                        {body}
+                    </div>
+                </div>
+                <div>
+                    {
+                        bottom.map((el) => el)
+                    }
+                </div>
+            </div>
+        </ScrollAnimation>
+    )
 }
+
+export default Card;

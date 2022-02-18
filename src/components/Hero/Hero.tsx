@@ -6,8 +6,13 @@ const profileImageUrl = "https://lh3.googleusercontent.com/JZY0oViJsH5xUfCSkRucF
 
 export const Hero = () => {
   return (
-    <div className="pt-52 flex justify-between gap-14">
-      <div className="hero-text">
+    <div className="pt-52 flex flex-col sm:flex-row justify-between space-y-20">
+      <div className="justify-center">
+        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
+          <img className="w-full sm:w-5/6 grayscale hover:grayscale-0" src={profileImageUrl} alt="Profile picture" />
+        </ScrollAnimation>
+      </div>
+      <div className="w-full">
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-3xl">{hero.hello}</p>
         </ScrollAnimation>
@@ -21,11 +26,6 @@ export const Hero = () => {
           <p className="text-3xl mb-8">{hero.smallResume} </p>
         </ScrollAnimation>
         <About />
-      </div>
-      <div className="justify-center">
-        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img className="w-full sm:w-5/6 grayscale hover:grayscale-0" src={profileImageUrl} alt="Profile picture" />
-        </ScrollAnimation>
       </div>
     </div>
   )

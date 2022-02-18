@@ -49,51 +49,35 @@ export const about = {
 export const career = {
     title: "Career",
     schools: [{
-        title: "European Master on Advanced Robotics",
-        where: "Università degli studi di Genova, Italy",
-        description: "Download all the details about my studies and which subjects I studied here: ",
-        when: "2015 - 2016"
-    }, {
-        title: "European Master on Advanced Robotics",
-        where: "Ecole Centrale de Nantes, France",
-        description: "Download all the details about my studies and which subjects I studied here: ",
-        when: "2014 - 2015"
-    },
-    {
-        title: "Bachelor's Degree in Electronic Engineering",
-        where: "Università degli studi di Genova, Italy",
-        when: "2010 - 2014"
-    }],
+            title: "European Master on Advanced Robotics",
+            where: "Università degli studi di Genova, Italy",
+            when: "2015 - 2016"
+        }, {
+            title: "European Master on Advanced Robotics",
+            where: "Ecole Centrale de Nantes, France",
+            when: "2014 - 2015"
+        },
+        {
+            title: "Bachelor's Degree in Electronic Engineering",
+            where: "Università degli studi di Genova, Italy",
+            when: "2010 - 2014"
+        }
+    ],
     jobs: [{
-        title: "Senior FullStack Developer",
-        company: "TeamSystem",
-        link: "https://www.teamsystems.com/",
-        description: "I work mainly with React and Redux to maintain and improve Digitalbox application. I also collaborate occasionally with backend developers to update or fix bugs in API written in NodeJS or Java.",
-        whereAndWhen: "Remote, 10/2021 - Present",
-    }, {
-        title: "Autonomous Driving Software Engineer",
-        company: "Consultant in Stellantis",
-        link: "https://www.stellantis.com/",
-        description: "As NetcomGroup consultant I was responsible of maintain and develop different tools used to validate autonomous driving software. Moreover with my team we studied and teste new methodologies and softwares to improve Stellantis toolchain.",
-        whereAndWhen: "Turin - Italy, 02/2020 - 10/2021",
-    }, {
-        title: "Autonomous Driving Software Engineer",
-        company: "Consultant in Stellantis",
-        link: "https://www.stellantis.com/",
-        description: "As NetcomGroup consultant I studied how to integrate some tools in Stellantis system in order to create a toolchain able to validate autonomous driving software",
-        whereAndWhen: "Munich - Germany, 10/2019 - 02/2020",
-    }, {
-        title: "Frontend Developer",
-        company: "Accenture",
-        link: "https://www.accenture.com/",
-        description: "I worked as frontend developer to design and develop performance and responsive website for very important clients with using different technologies like React, Redux, JS6, HTML, CSS, Docker and others",
-        whereAndWhen: "Milan - Italy, 11/2018 - 10/2019",
-    }, {
-        title: "IoT Developer",
-        company: "JOL Laboratory, Tim",
-        description: "For my thesis I worked with a team for an European project that have as main goal the creaton of an Android application that can be used to communicate and collect data from different smart devices (look in my projects section for more details)",
-        whereAndWhen: "Milan - Italy, 05/2018 - 09/2018",
-    }]
+            title: "Professional Software Engineer",
+            company: "uDroppy",
+            link: "https://www.udroppy.com/",
+            description: "I work on the development of the new platform with Nextjs, React as frontend and Serverless backend in Nodejs",
+            whereAndWhen: "Remote, 04/2021 - present",
+        },
+        {
+            title: "Professional Software Engineer",
+            company: "ti&m",
+            link: "https://www.ti8m.com/",
+            description: "I work mainly with React and Redux/Saga. I also collaborate in the development of backend project with Java and Spring.",
+            whereAndWhen: "Zürich, 06/2017 - 03/2021",
+        }
+    ]
 }
 
 export const projects = {
@@ -105,28 +89,25 @@ export const projects = {
             title: "Personal Project - Climberworld Web App",
             description: "Web app I'm developing as fullstack using React as frontend and Flask (Python framework) as backend. This site has the ambition to collect information about all the refuges, excursions and climbing walls of the Alps.\
             \nClick the link to see the website!",
-            links: [
-                {
-                    label: "Climberworld",
-                    url: "https://climberworld.web.app/",
-                    icon: externalLinkIcon,
-                }
-            ],
+            links: [{
+                label: "Climberworld",
+                url: "https://climberworld.web.app/",
+                icon: externalLinkIcon,
+            }],
             mainSkills: ["React", "Python", "SQL", "Flask", "Docker"],
-            allSkills: ["React", "Redux","styled-components", "Javascript", "Python", "html","CSS","SQL", "Flask", "Docker", "VS Code","firebase","pythonanywhere","Swagger"],
-            longtext: [
-                {
+            allSkills: ["React", "Redux", "styled-components", "Javascript", "Python", "html", "CSS", "SQL", "Flask", "Docker", "VS Code", "firebase", "pythonanywhere", "Swagger"],
+            longtext: [{
                     type: "text",
                     value: "In my free time I'm working to to this application in order to learn new things and keep training the knowledge I already have.\
                     \nFor the moment I’m working on it alone and I’m developing both frontend and backend."
                 },
                 {
                     type: "subtitle",
-                    value:"Frontend"
+                    value: "Frontend"
                 },
                 {
                     type: "text",
-                    value:"For the frontend these are the main technologies I’m using:\
+                    value: "For the frontend these are the main technologies I’m using:\
                     \n- *React* as frontend\
                     \n- *Redux* to manage the store of application\
                     \n- *Styled* components to manage the style\
@@ -134,11 +115,11 @@ export const projects = {
                 },
                 {
                     type: "subtitle",
-                    value:"Backend"
+                    value: "Backend"
                 },
                 {
                     type: "text",
-                    value:"For the backend these are the main technologies I’m using:\
+                    value: "For the backend these are the main technologies I’m using:\
                     \n- *Flask* micro-framework developed in Python\
                     \n- *mysql* to manage the database because the information inside the application are well structured\
                     \n- *phpmyadmin docker image* used locally to explore the local database using an UI\
@@ -149,11 +130,11 @@ export const projects = {
                 },
                 {
                     type: "subtitle",
-                    value:"Other Technologies/Tools"
+                    value: "Other Technologies/Tools"
                 },
                 {
                     type: "text",
-                    value:"- *Git*:\
+                    value: "- *Git*:\
                     \n- *Visual Studio Code*"
                 }
 
@@ -163,17 +144,14 @@ export const projects = {
         {
             title: "TeamSystems - Digital Box",
             description: "This is an application web designed for professional firms who wish to achieve information sharing processes and improve the relationship with their customers, involve and exchange information procuofi and in real time.",
-            links: [
-                {
-                    label: "Digital Box",
-                    url: "https://app.teamsystemdigital.com/digitalbox#/",
-                    icon: externalLinkIcon,
-                }
-            ],
+            links: [{
+                label: "Digital Box",
+                url: "https://app.teamsystemdigital.com/digitalbox#/",
+                icon: externalLinkIcon,
+            }],
             mainSkills: ["React", "Redux", "JS", "HTML", "CSS"],
             allSkills: ["React", "Redux", "JS", "HTML", "CSS", "VS Code", "Windows 10", "Python", "Storybook", "antd", "Cypress", "Jest"],
-            longtext: [
-                {
+            longtext: [{
                     type: "text",
                     value: "I work, using Agile methodologies, as frontend developer, to Digital Box application in order to update the functionalities already available,implement new ones. Furthermore I fix bugs and refactored old components in order to create a more understandable code and improve the performance."
                 },
@@ -232,8 +210,7 @@ export const projects = {
             title: "Portfolio Online",
             description: "I create this portfolio online to show my skills and experience.\
             \nI used React with Typescript and style-components and I publish it on my github account through github pages.",
-            links: [
-                {
+            links: [{
                     label: "Website",
                     url: "https://fangelo94.github.io/",
                     icon: externalLinkIcon,
@@ -246,8 +223,7 @@ export const projects = {
             ],
             mainSkills: ["React", "Typescript", "Style-components", "GiHub Pages"],
             allSkills: ["React", "Typescript", "Style-components", "GiHub Pages", "GitHub", "gh-pages"],
-            longtext: [
-                {
+            longtext: [{
                     type: "text",
                     value: "Starting from a model I found online I created this portfolio online improving the code and adding new components."
                 },
@@ -270,8 +246,7 @@ export const projects = {
         {
             title: "Personal Project - Traveltips Web Application",
             description: "This is an application that user will use to share information about cities and tourist places like a social network focused on travel.\n I developed both backend and frontend for a startup but I didn't finish the project because they aren't interested anymore on it. Backend is down at the moment, only frontend is visible.",
-            links: [
-                {
+            links: [{
                     label: "Traveltips App",
                     url: "https://traveltips-a9abd.web.app/",
                     icon: externalLinkIcon,
@@ -285,12 +260,12 @@ export const projects = {
                     label: "Traveltips Backend Git",
                     url: "https://github.com/FAngelo94/TravelTipsBackend_Visible",
                     icon: githubIcon,
-                }],
+                }
+            ],
             mainSkills: ["React", "Redux", "Python", "Docker"],
-            longtext: [
-                {
+            longtext: [{
                     type: "text",
-                    value:"This is an application that user will use to share information about cities and tourist places like a social network focused on travel.\n I developed both backend and frontend for a startup but I didn't finish the project because they aren't interested anymore on it. Backend is down at the moment, only frontend is visible."
+                    value: "This is an application that user will use to share information about cities and tourist places like a social network focused on travel.\n I developed both backend and frontend for a startup but I didn't finish the project because they aren't interested anymore on it. Backend is down at the moment, only frontend is visible."
                 },
                 {
                     type: "subtitle",
@@ -350,8 +325,7 @@ export const projects = {
         {
             title: "Stellantis - Validation of ADAS System",
             description: "As consultant I’m working inside Stellantis (previous FCA) in an engineering team that manage the different tools used by other team in order to validate the autonomous driving algorithm. We work together other teams that are in different part of the world.",
-            links: [
-            ],
+            links: [],
             mainSkills: ["Python", "Ubuntu", "Docker", "C++"],
             allSkills: ["Python", "Ubuntu", "Docker", "C++", "C#", "Bash Script", "Visual Studio Code", "Windows 10", "Unity",
                 "Github",
@@ -360,9 +334,9 @@ export const projects = {
                 "Codebeamer",
                 "Grafana",
                 "NDS and OpenDRIVE map format",
-                "ROS"],
-            longtext: [
-                {
+                "ROS"
+            ],
+            longtext: [{
                     type: "text",
                     value: "As consultant I’m working inside Stellantis (previous FCA) in one big project regarding the autonomous driving."
                 },
@@ -439,8 +413,7 @@ export const projects = {
             ],
             mainSkills: ["React", "Redux", "NodeJS", "Stencil JS", "Python"],
             allSkills: ["html", "CSS", "Sass", "JS6", "Python", "Java", "React", "Redux", "NodeJS", "Stencil JS", "Storybook", "Chrome", "Firefox", "Safari", "IE11", "VS Code", "Git", "Jupiter", "MQTT", "LeafletJS", "D3.js", "React intl"],
-            longtext: [
-                {
+            longtext: [{
                     type: "text",
                     value: "In my fourth project I developed a web application using React with Redux.\
                     \nIn this project I worked in agile mode (scrum in the specific) and the team included mainly with 2 frontend developers, 2 functional, 1 UI designer, 2 backend developer and 1 scrum master.\
@@ -592,17 +565,14 @@ export const projects = {
         {
             title: "Accenture - Gazzetta dello Sport",
             description: "In my second project in Accenture I work in a very big and interesting project. In this case the goal was the performances because the website is read by thousand and thousand of people.",
-            links: [
-                {
-                    label: "Gazzetta dello Sport",
-                    url: "https://www.gazzetta.it/",
-                    icon: externalLinkIcon,
-                }
-            ],
+            links: [{
+                label: "Gazzetta dello Sport",
+                url: "https://www.gazzetta.it/",
+                icon: externalLinkIcon,
+            }],
             mainSkills: ["HTML", "CSS", "JS6", "Sass", "Docker"],
             allSkills: ["HTML", "CSS", "JS6", "Sass", "Galen", "Docker", "Gulp", "VS Code", "Jenkins", "Jira", "Git"],
-            longtext: [
-                {
+            longtext: [{
                     type: "subtitle",
                     value: "Languages Used"
                 },
@@ -728,12 +698,10 @@ export const projects = {
             \nI developed some components for the website of a big client in the financial sector.\
             \nHere the website was divided in “molecules”.\
             \nEvery molecules it was implemented to be responsive and work as in desktop as in mobile devices.",
-            links: [
-            ],
+            links: [],
             mainSkills: ["JS6", "Sass", "html"],
             allSkills: ["JS6", "Sass", "Html", "CSS", "Gulp", "Chrome", "firefox", "Safari", "IE11", "Git", "VS Code", "Webpack", "Swiper", "Plyr"],
-            longtext: [
-                {
+            longtext: [{
                     type: "text",
                     value: "In my third project in Accenture I worked on an already started project.\
                     \nI developed some components for the website of a big client in the financial sector.\

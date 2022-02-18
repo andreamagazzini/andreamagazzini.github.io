@@ -1,64 +1,32 @@
-import { Container } from "./styles";
 import bachelor from "../../assets/bachelor.png";
 import suitcase from "../../assets/suitcase.png";
-import ScrollAnimation from "react-animate-on-scroll";
 import { career } from "../../data";
+import Card from "../Card/Card";
 
 export const Career = () => {
   return (
-    <Container id="career">
-      <h2>{career.title}</h2>
-      <div className="projects">
-        {career.jobs.map((job, index) => (
-          <ScrollAnimation 
-          key={index}
-          animateIn="flipInX">
-            <div className="project">
-              <header>
-                <img src={suitcase} alt="Suitcase" />
-                <div className="project-links">
-                  <a href={job.link}>{job.company}</a>
-                </div>
-              </header>
-              <div className="body">
-                <h3>{job.title}</h3>
-                <p>{job.description}</p>
-              </div>
-              <footer>
-                <ul className="tech-list">
-                  <li>{job.whereAndWhen}</li>
-                </ul>
-              </footer>
-            </div>
-          </ScrollAnimation>
+    <div>
+      <h2 className="text-6xl mb-20 text-center">{career.title}</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-3 overflow-hidden p-4 gap-8">
+        {career.jobs.map((job) => (
+          <Card 
+            key={job.company}
+            top={[<img className="h-10" src={suitcase} />, job.company]}
+            header={job.title}
+            body={job.description}
+            bottom={[job.whereAndWhen]}
+          />
         ))}
-        {career.schools.map((school, index) => (
-          <ScrollAnimation 
-          key={index}
-          animateIn="flipInX">
-            <div className="project">
-              <header>
-                <img src={bachelor} alt="Bachelor" />
-                <div className="project-links"></div>
-              </header>
-              <div className="body">
-                <h3>{school.title}</h3>
-                <p>{school.where}</p>
-                {school.description && (
-                  <p>
-                    {school.description}
-                  </p>
-                )}
-              </div>
-              <footer>
-                <ul className="tech-list">
-                  <li>{school.when}</li>
-                </ul>
-              </footer>
-            </div>
-          </ScrollAnimation>
+        {career.schools.map((school) => (
+          <Card 
+            key={school.title}
+            top={[<img className="h-10" src={bachelor} />]}
+            header={school.title}
+            body={school.where}
+            bottom={[school.when]}
+          />
         ))}
       </div>
-    </Container>
+    </div>
   );
 }
