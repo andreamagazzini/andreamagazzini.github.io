@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 import { header } from "../../data"
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 
 const CurriculumUrl = 'https://drive.google.com/file/d/1eIY5VDknoH6zAE7LmffbFspfd1_nN3gE/view?usp=sharing'
 
@@ -20,7 +20,7 @@ export const Header = () => {
   }
 
   return (
-    <Container className="header-fixed">
+    <Container className="flex justify-between items-center fixed top-0 left-0 w-screen px-10 py-5">
       <Router>
         <HashLink smooth to="#home" className="logo">
         <img src={logo} alt="logo"/>

@@ -6,7 +6,7 @@ import githubIcon from '../../assets/github-icon.svg'
 import codepen from '../../assets/codepen.png'
 import telegram from '../../assets/telegram.png'
 import codingame from "../../assets/codingame.png"
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { footer} from "../../data"
 
 export function Footer() {

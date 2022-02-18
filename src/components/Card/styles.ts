@@ -18,13 +18,14 @@ display: absolute;
     
 
     .project {
+      width: 50%;
       padding: 2rem 1.8rem;
-      background-color: #2b2b2b;
+      background-color: white;
       border-radius: 1.2rem;
       transition: 0.25s;
       display: flex;
       flex-direction: column;
-      color: #fff;
+      color: black;
 
       position: fixed;
       top: 60px;

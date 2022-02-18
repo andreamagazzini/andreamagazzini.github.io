@@ -23,21 +23,6 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--black);
       }
 
-      header.header-fixed{
-        transition: 0.5s;
-        background-color: #f5f5f550;
-        a{
-          transition: 0.5s;
-          color: black;
-        }
-        .menu,.menu:before, .menu:after{
-          background-color: var(--black); 
-        }
-        .menu.active{
-          background-color: rgba(555,555,555,0);
-        }
-      }
-
       footer.footer{
         transition: 0.5s;
         background-color: rgba(0,0,0,0.1);

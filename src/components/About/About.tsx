@@ -1,4 +1,3 @@
-import { Container } from "./styles";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
@@ -12,10 +11,9 @@ import windowsIcon from "../../assets/windows-10.svg";
 import vscodeIcon from "../../assets/vscode.svg";
 import ubuntuIcon from "../../assets/ubuntu.png"; 
 import ScrollAnimation from "react-animate-on-scroll";
-import Illustration from "../../assets/illustration.svg"
 import { about } from "../../data";
 
-export function About() {
+export const About = () => {
   const icons = [
     { icon: jsIcon, name: "JavaScript" },
     { icon: reactIcon, name: "React" },
@@ -31,10 +29,10 @@ export function About() {
     { icon: ubuntuIcon, name: "Ubuntu" },
   ];
   return (
-    <Container id="about">
+    <div className="mt-12 grid grid-cols-2 gap-8 justify-center sm:justify-start">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
-          <h2>{about.title}</h2>
+          <h2 className="inline-block mb-8 border-b-4 border-blue-500">{about.title}</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
           <p></p>
@@ -46,34 +44,31 @@ export function About() {
             delay={(0.4 + index / 5) * 1000}
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
-            <p>{p}</p>
+            <p className="text-3xl tracking-widest font-medium">{p}</p>
           </ScrollAnimation>
         ))}
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
-          <h3>{about.mainSkills}</h3>
+          <h3 className="mt-12 text-green-500">{about.mainSkills}</h3>
         </ScrollAnimation>
 
-        <div className="hard-skills">
+        <div className="mt-2 flex align-center flex-wrap gap-7 justify-center sm:justify-start">
           {icons.map((icon, index) => (
-            <div className="hability" key={index}>
+            <div 
+              key={index}
+              className="flex flex-col align-center relative" 
+            >
               <ScrollAnimation
                 animateIn="fadeInUp"
                 delay={(0.1 + index / 10) * 1000}
               >
-                <span>{icon.name}</span>
-                <img src={icon.icon} alt={icon.name} />
+                <span className="absolute left-2/4 -bottom-3/4 -translate-x-1/2 -translate-y-1/2 invisible hover:invisible">{icon.name}</span>
+                <img className="w-14" src={icon.icon} alt={icon.name} />
               </ScrollAnimation>
             </div>
           ))}
         </div>
       </div>
-      <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          
-          <img src={Illustration} alt="Illustration" />
-        </ScrollAnimation>
-      </div>
-    </Container>
+    </div>
   );
 }
