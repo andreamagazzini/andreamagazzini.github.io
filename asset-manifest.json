@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f4df1bc.css",
-    "main.js": "/static/js/main.8256d2a2.js",
+    "main.css": "/static/css/main.9d9bbaa1.css",
+    "main.js": "/static/js/main.985a56e4.js",
     "static/media/bachelor.png": "/static/media/bachelor.65be75ca208718997130.png",
     "static/media/flask.svg": "/static/media/flask.ce50c4de7a6645f7643ac480405d0e9a.svg",
     "static/media/logo.svg": "/static/media/logo.76dc2aa73a2f7921e31ccb218f99f6a6.svg",
-    "static/media/close.png": "/static/media/close.29afb4c4fdd96add278a.png",
     "static/media/suitcase.png": "/static/media/suitcase.90ca718fc94573b081c8.png",
     "static/media/telegram.png": "/static/media/telegram.65db574b9f74a1d788ea.png",
     "static/media/linkedin.png": "/static/media/linkedin.f249b38224ca41a0b909.png",
@@ -27,11 +26,11 @@
     "static/media/github-icon.svg": "/static/media/github-icon.b733fb12cb665f30988dbc522dd40f49.svg",
     "static/media/external-link-icon.svg": "/static/media/external-link-icon.e5f54e725f027cf7f3e6c481893eb96f.svg",
     "static/media/windows-10.svg": "/static/media/windows-10.afea2f1c2f7e291f76e33319c63dcf62.svg",
-    "main.2f4df1bc.css.map": "/static/css/main.2f4df1bc.css.map",
-    "main.8256d2a2.js.map": "/static/js/main.8256d2a2.js.map"
+    "main.9d9bbaa1.css.map": "/static/css/main.9d9bbaa1.css.map",
+    "main.985a56e4.js.map": "/static/js/main.985a56e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f4df1bc.css",
-    "static/js/main.8256d2a2.js"
+    "static/css/main.9d9bbaa1.css",
+    "static/js/main.985a56e4.js"
   ]
 }
