@@ -29,7 +29,7 @@ export const About = () => {
     { icon: ubuntuIcon, name: "Ubuntu" },
   ];
   return (
-    <div className="mt-12 justify-center sm:justify-start">
+    <div className="mt-12 justify-center lg:justify-start">
       <div>
         <ScrollAnimation animateIn="fadeInLeft">
           <h2 className="inline-block mb-8 border-b-4 border-blue-500">{about.title}</h2>
@@ -49,7 +49,7 @@ export const About = () => {
           <h3 className="mt-12 text-green-500">{about.mainSkills}</h3>
         </ScrollAnimation>
 
-        <div className="mt-2 flex align-center flex-wrap gap-7 justify-center sm:justify-start">
+        <div className="mt-2 flex align-center flex-wrap gap-7 justify-center lg:justify-start">
           {icons.map((icon, index) => (
             <div 
               key={index}

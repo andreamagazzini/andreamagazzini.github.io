@@ -1,57 +1,63 @@
-import { Container } from './styles'
 import { BrowserRouter as Router } from 'react-router-dom'
-import { NavHashLink, HashLink } from 'react-router-hash-link'
-import { useState } from 'react'
-import { header } from "../../data"
+import { HashLink } from 'react-router-hash-link'
+import linkedinIcon from '../../assets/linkedin.png'
+import githubIcon from '../../assets/github-icon.svg'
+import telegram from '../../assets/telegram.png'
 import logo from "../../assets/logo.svg";
+import emailIcon from "../../assets/email-icon.svg";
+import phoneIcon from "../../assets/phone-icon.svg"
+import { Popover } from '../Popover/Popover'
 
 const CurriculumUrl = 'https://drive.google.com/file/d/1eIY5VDknoH6zAE7LmffbFspfd1_nN3gE/view?usp=sharing'
 
 export const Header = () => {
-  const [isActive, setActive] = useState(false)
-
-  function closeMenu() {
-    setActive(false)
-  }
-
   return (
-    <Container className="flex justify-between items-center fixed top-0 left-0 w-screen px-10 py-5">
+    <div className="flex items-center justify-between p-5 lg:py-8 lg:px-40 fixed top-0 left-0 w-screen bg-white/75 z-50">
       <Router>
-        <HashLink smooth to="#home" className="logo">
-        <img src={logo} alt="logo"/>
+        <HashLink smooth to="#home">
+          <img className="h-8 lg:h-16" src={logo} alt="logo" />
         </HashLink>
 
-        <nav className={isActive ? 'active' : ''}>
-          <NavHashLink smooth to="#home" onClick={closeMenu}>
-            {header.home}
-          </NavHashLink>
-          <NavHashLink smooth to="#about" onClick={closeMenu}>
-            {header.aboutMe}
-          </NavHashLink>
-          <NavHashLink smooth to="#career" onClick={closeMenu}>
-            {header.career}
-          </NavHashLink>
-          <NavHashLink smooth to="#portfolio" onClick={closeMenu}>
-            {header.projects}
-          </NavHashLink>
-          <NavHashLink smooth to="#contacts" onClick={closeMenu}>
-            {header.contacts}
-          </NavHashLink>
-          <a href={CurriculumUrl} target="_blank" download className="button">
+        <nav className="flex items-center gap-8">
+          <Popover
+            body={"andreamaga4@gmail.com"}
+          >
+            <img className="text-5xl w-12 fill-white" src={emailIcon} alt="Email" />
+          </Popover>
+          <Popover
+            body={"+41763721444"}
+          >
+            <img className=" text-5xl w-12 fill-white" src={phoneIcon} alt="Phone" />
+          </Popover>
+          <a
+            href="https://www.linkedin.com/in/andreamagazzini/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="text-5xl w-12" src={linkedinIcon} alt="Linkedin" />
+          </a>
+
+          <a
+            href="https://github.com/andreamagazzini"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="text-5xl w-12" src={githubIcon} alt="GitHub" />
+          </a>
+
+          <a
+            href="https://t.me/andreamagazzini"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img className="text-5xl w-12" src={telegram} alt="Telegram" />
+          </a>
+
+          <a href={CurriculumUrl} target="_blank" download className="p-5 bg-green-500 rounded-lg text-white">
             CV
           </a>
         </nav>
-
-        <div
-          aria-expanded={isActive ? 'true' : 'false'}
-          aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
-          className={isActive ? 'menu active' : 'menu'}
-          onClick={() => {
-            setActive(!isActive)
-          }}
-        ></div>
       </Router>
-    </Container>
+    </div>
   )
 }

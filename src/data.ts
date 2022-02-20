@@ -9,14 +9,6 @@ export const hero = {
     contacts: "Contacts",
 }
 
-export const header = {
-    home: "Home",
-    career: "Career",
-    aboutMe: "About Me",
-    projects: "Projects",
-    contacts: "Contacts",
-}
-
 export const footer = {
     center: "Website done by React",
     center2: "and love",

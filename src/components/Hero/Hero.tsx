@@ -6,23 +6,23 @@ const profileImageUrl = "https://lh3.googleusercontent.com/JZY0oViJsH5xUfCSkRucF
 
 export const Hero = () => {
   return (
-    <div className="pt-52 flex flex-col sm:flex-row justify-between space-y-20">
+    <div className="pt-32 lg:pt-72 flex flex-col lg:flex-row justify-between space-y-20 lg:space-y-0">
       <div className="justify-center">
-        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img className="w-full sm:w-5/6 grayscale hover:grayscale-0" src={profileImageUrl} alt="Profile picture" />
+        <ScrollAnimation animateIn="fadeInDown">
+          <img className="w-full lg:w-5/6" src={profileImageUrl} alt="Profile picture" />
         </ScrollAnimation>
       </div>
       <div className="w-full">
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-3xl">{hero.hello}</p>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp">
           <h1 className="text-7xl">{hero.name}</h1>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp">
           <h3 className="my-3 text-green-500">{hero.title}</h3>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp">
           <p className="text-3xl mb-8">{hero.smallResume} </p>
         </ScrollAnimation>
         <About />

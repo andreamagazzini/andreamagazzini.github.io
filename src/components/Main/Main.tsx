@@ -1,6 +1,5 @@
 
 import { Hero } from "../Hero/Hero";
-import { Contact } from "../Contact/Contact";
 import { Career } from "../Career/Career";
 
 import cssIcon from "../../assets/css-icon.svg";
@@ -39,10 +38,9 @@ export function Main() {
   ];
 
   return (
-    <div className="py-10 px-10 sm:px-52 space-y-52">
+    <div className="py-10 px-10 lg:px-52 space-y-52">
       <Hero />
       <Career />
-      <Contact />
     </div>
   );
 }

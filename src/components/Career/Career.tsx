@@ -7,7 +7,7 @@ export const Career = () => {
   return (
     <div>
       <h2 className="text-6xl mb-20 text-center">{career.title}</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 overflow-hidden p-4 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 overflow-hidden p-4 gap-8">
         {career.jobs.map((job) => (
           <Card 
             key={job.company}
