@@ -1,13 +1,16 @@
 import ScrollAnimation from "react-animate-on-scroll"
 
-interface ICard {
-    top: React.ReactNode[],
-    header: React.ReactNode,
-    body: React.ReactNode,
-    bottom: React.ReactNode[]
+export interface ICard {
+    title: string,
+    where: string,
+    when: string,
+    icon: string,
+    company?: string,
+    link?: string,
+    description?: string,
 }
 
-const Card = ({ top, header, body, bottom }: ICard) => {
+export const Card = ({ title, where, when, icon, company, description }: ICard) => {
     return (
         <ScrollAnimation
             animateIn="fadeIn"
@@ -16,24 +19,22 @@ const Card = ({ top, header, body, bottom }: ICard) => {
                 <div className="flex flex-col space-y-10">
                     <div className="flex items-center justify-between">
                         {
-                            top.map((el) => el)
+                            [<img className="h-10" src={icon} alt="icon"/>, company].map((el) => el)
                         }
                     </div>
                     <div className="text-4xl font-bold">
-                        {header}
+                        {title}
                     </div>
                     <div>
-                        {body}
+                        {description || where}
                     </div>
                 </div>
                 <div>
                     {
-                        bottom.map((el) => el)
+                        [when].map((el) => el)
                     }
                 </div>
             </div>
         </ScrollAnimation>
     )
 }
-
-export default Card;

@@ -5,39 +5,38 @@ import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import androidIcon from "../../assets/android.svg";
-import bootstrapIcon from "../../assets/bootstrap.svg";
 import dockerIcon from "../../assets/docker.svg";
 import windowsIcon from "../../assets/windows-10.svg";
 import vscodeIcon from "../../assets/vscode.svg";
 import ubuntuIcon from "../../assets/ubuntu.png"; 
 import ScrollAnimation from "react-animate-on-scroll";
-import { about } from "../../data";
+import { about } from "../../data/about";
+
+const icons = [
+  { icon: jsIcon, name: "JavaScript" },
+  { icon: reactIcon, name: "React" },
+  { icon: nodeIcon, name: "Node.js" },
+  { icon: typescriptIcon, name: "TypeScript" },
+  { icon: cssIcon, name: "CSS" },
+  { icon: htmlIcon, name: "HTML" },
+  { icon: dockerIcon, name: "Docker" },
+  { icon: vscodeIcon, name: "VS Code" },
+  { icon: androidIcon, name: "Android" },
+  { icon: windowsIcon, name: "Windows" },
+  { icon: ubuntuIcon, name: "Ubuntu" },
+];
 
 export const About = () => {
-  const icons = [
-    { icon: jsIcon, name: "JavaScript" },
-    { icon: reactIcon, name: "React" },
-    { icon: nodeIcon, name: "Node.js" },
-    { icon: typescriptIcon, name: "TypeScript" },
-    { icon: cssIcon, name: "CSS" },
-    { icon: htmlIcon, name: "HTML" },
-    { icon: dockerIcon, name: "Docker" },
-    { icon: bootstrapIcon, name: "Bootstrap" },
-    { icon: vscodeIcon, name: "VS Code" },
-    { icon: androidIcon, name: "Android" },
-    { icon: windowsIcon, name: "Windows" },
-    { icon: ubuntuIcon, name: "Ubuntu" },
-  ];
   return (
     <div className="mt-12 justify-center lg:justify-start">
       <div>
-        <ScrollAnimation animateIn="fadeInLeft">
+        <ScrollAnimation animateIn="fadeInUp">
           <h2 className="inline-block mb-8 border-b-4 border-blue-500">{about.title}</h2>
         </ScrollAnimation>
         {about.paragraphs.map((p, index) => (
           <ScrollAnimation
             key={index}
-            animateIn="fadeInLeft"
+            animateIn="fadeInUp"
             delay={(0.4 + index / 5) * 1000}
             style={{ marginTop: "2rem", marginBottom: "2rem" }}
           >
@@ -45,7 +44,7 @@ export const About = () => {
           </ScrollAnimation>
         ))}
 
-        <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
+        <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
           <h3 className="mt-12 text-green-500">{about.mainSkills}</h3>
         </ScrollAnimation>
 

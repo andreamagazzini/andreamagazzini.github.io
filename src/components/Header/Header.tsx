@@ -8,7 +8,7 @@ import emailIcon from "../../assets/email-icon.svg";
 import phoneIcon from "../../assets/phone-icon.svg"
 import { Popover } from '../Popover/Popover'
 
-const CurriculumUrl = 'https://drive.google.com/file/d/1eIY5VDknoH6zAE7LmffbFspfd1_nN3gE/view?usp=sharing'
+const CurriculumUrl = 'https://drive.google.com/file/d/1ApQZKbaIV0C5dkV4kVHi35_NXmpE2Rcz/view?usp=sharing'
 
 export const Header = () => {
   return (
