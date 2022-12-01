@@ -2,6 +2,8 @@ import { Hero } from "../Hero/Hero";
 import { EDUCATION } from "../../data/education";
 import { JOB } from "../../data/job";
 import { Timeline } from "../Timeline/Timeline";
+import { CardGrid } from "../CardGrid";
+import { PROJECTS } from "../../data/projects";
 
 export function Main() {
   return (
@@ -17,6 +19,9 @@ export function Main() {
         points={EDUCATION.cards}
       />
       </div>
+      <CardGrid 
+        {...PROJECTS}
+      />
     </div>
   );
 }

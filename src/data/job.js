@@ -1,5 +1,3 @@
-import suitcase from "../assets/suitcase.png";
-
 export const JOB = {
   title: "Work Experience",
   cards: [{
@@ -8,7 +6,7 @@ export const JOB = {
       link: "https://www.udroppy.com/",
       where: "Remote",
       when: "Apr 2021 - Nov 2022",
-      icon: suitcase,
+      icon: "ic:outline-work",
     },
     {
       title: "Professional Software Engineer",
@@ -16,21 +14,21 @@ export const JOB = {
       link: "https://www.ti8m.com/",
       where: "Zürich, Switzerland",
       when: "Jun 2017 - Mar 2021",
-      icon: suitcase,
+      icon: "ic:outline-work",
     },
     {
       title: "Extern Software Engineer",
       company: "Swiss Railways / SBB CFF FFS",
       where: "Bern, Switzerland",
       when: "Mar 2019 - Nov 2019",
-      icon: suitcase,
+      icon: "ic:outline-work",
     },
     {
       title: "Extern Software Engineer",
       company: "SIX Payments",
       where: "Biel, Switzerland",
       when: "Feb 2019 - Jul 2018",
-      icon: suitcase
+      icon: "ic:outline-work"
     }
   ]
 }

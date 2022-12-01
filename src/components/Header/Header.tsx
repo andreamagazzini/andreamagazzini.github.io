@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
-import linkedinIcon from '../../assets/linkedin.png'
+import { Icon } from "@iconify-icon/react"
 import githubIcon from '../../assets/github-icon.svg'
 import telegram from '../../assets/telegram.png'
 import logo from "../../assets/logo.svg";
@@ -22,19 +22,19 @@ export const Header = () => {
           <Popover
             body={"andreamaga4@gmail.com"}
           >
-            <img className="text-5xl w-12 fill-white" src={emailIcon} alt="Email" />
+            <Icon icon="ic:round-email" width={30} />
           </Popover>
           <Popover
             body={"+41763721444"}
           >
-            <img className=" text-5xl w-12 fill-white" src={phoneIcon} alt="Phone" />
+            <Icon icon="ic:round-phone" width={30} />
           </Popover>
           <a
             href="https://www.linkedin.com/in/andreamagazzini/"
             target="_blank"
             rel="noreferrer"
           >
-            <img className="text-5xl w-12" src={linkedinIcon} alt="Linkedin" />
+            <Icon icon="logos:linkedin-icon" width={30} />
           </a>
 
           <a
@@ -42,7 +42,7 @@ export const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="text-5xl w-12" src={githubIcon} alt="GitHub" />
+            <Icon icon="logos:github-icon" width={30} />
           </a>
 
           <a
@@ -50,7 +50,7 @@ export const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img className="text-5xl w-12" src={telegram} alt="Telegram" />
+           <Icon icon="logos:telegram" width={30} />
           </a>
 
           <a href={CurriculumUrl} target="_blank" download className="p-5 bg-green-500 rounded-lg text-white">

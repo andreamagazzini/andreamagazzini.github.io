@@ -1,30 +1,5 @@
-import cssIcon from "../../assets/css-icon.svg";
-import htmlIcon from "../../assets/html-icon.svg";
-import jsIcon from "../../assets/js-icon.svg";
-import nodeIcon from "../../assets/node-icon.svg";
-import reactIcon from "../../assets/react-icon.svg";
-import typescriptIcon from "../../assets/typescript-icon.svg";
-import androidIcon from "../../assets/android.svg";
-import dockerIcon from "../../assets/docker.svg";
-import windowsIcon from "../../assets/windows-10.svg";
-import vscodeIcon from "../../assets/vscode.svg";
-import ubuntuIcon from "../../assets/ubuntu.png"; 
 import ScrollAnimation from "react-animate-on-scroll";
 import { about } from "../../data/about";
-
-const icons = [
-  { icon: jsIcon, name: "JavaScript" },
-  { icon: reactIcon, name: "React" },
-  { icon: nodeIcon, name: "Node.js" },
-  { icon: typescriptIcon, name: "TypeScript" },
-  { icon: cssIcon, name: "CSS" },
-  { icon: htmlIcon, name: "HTML" },
-  { icon: dockerIcon, name: "Docker" },
-  { icon: vscodeIcon, name: "VS Code" },
-  { icon: androidIcon, name: "Android" },
-  { icon: windowsIcon, name: "Windows" },
-  { icon: ubuntuIcon, name: "Ubuntu" },
-];
 
 export const About = () => {
   return (
@@ -43,27 +18,6 @@ export const About = () => {
             <p className="text-2xl tracking-widest font-medium">{p}</p>
           </ScrollAnimation>
         ))}
-
-        <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-          <h3 className="mt-12 text-green-500">{about.mainSkills}</h3>
-        </ScrollAnimation>
-
-        <div className="mt-2 flex align-center flex-wrap gap-7 justify-center lg:justify-start">
-          {icons.map((icon, index) => (
-            <div 
-              key={index}
-              className="flex flex-col align-center relative" 
-            >
-              <ScrollAnimation
-                animateIn="fadeInUp"
-                delay={(0.1 + index / 10) * 1000}
-              >
-                <span className="absolute left-2/4 -bottom-3/4 -translate-x-1/2 -translate-y-1/2 invisible hover:invisible">{icon.name}</span>
-                <img className="w-14" src={icon.icon} alt={icon.name} />
-              </ScrollAnimation>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
