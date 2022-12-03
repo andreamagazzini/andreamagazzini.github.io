@@ -26,6 +26,18 @@ object-assign
  * @license MIT
  */
 
+/**
+* (c) Iconify
+*
+* For the full copyright and license information, please view the license.txt
+* files at https://github.com/iconify/iconify
+*
+* Licensed under MIT.
+*
+* @license MIT
+* @version 1.0.2
+*/
+
 /** @license React v0.20.2
  * scheduler.production.min.js
  *
