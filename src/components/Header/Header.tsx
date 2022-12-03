@@ -1,11 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import { Icon } from "@iconify-icon/react"
-import githubIcon from '../../assets/github-icon.svg'
-import telegram from '../../assets/telegram.png'
 import logo from "../../assets/logo.svg";
-import emailIcon from "../../assets/email-icon.svg";
-import phoneIcon from "../../assets/phone-icon.svg"
 import { Popover } from '../Popover/Popover'
 
 const CurriculumUrl = 'https://drive.google.com/file/d/1ApQZKbaIV0C5dkV4kVHi35_NXmpE2Rcz/view?usp=sharing'

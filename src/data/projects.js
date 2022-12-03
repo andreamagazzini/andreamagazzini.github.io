@@ -1,6 +1,6 @@
 import { SKILLS } from "./skills";
 
-const { react, nodejs, spring, serverless, neo4j, d3, javascript, typescript } = SKILLS;
+const { react, nodejs, spring, serverless, neo4j, d3, javascript, typescript, cplusplus, java, solidity } = SKILLS;
 
 export const PROJECTS = {
   title: "Projects",
@@ -14,7 +14,7 @@ export const PROJECTS = {
       when: "1 year and 7 months",
       icon: "ic:outline-work",
       skills: {
-        Framework: `FE: Nextjs + Reactjs, BE: Serverless + Nodejs`,
+        Framework: `FE: Next.js + React, BE: Serverless + Node.js`,
         Languages: `JavaScript, TypeScript`,
         Automation: `Vercel, AWS, GitHub Actions`,
         IDE: "VSCode",
@@ -47,6 +47,10 @@ export const PROJECTS = {
       when: "8 months",
       icon: "ic:outline-work",
       skills: {
+        Methodology: "Agile/Scrum",
+        Languages: "Java, JavaScript, Cypher",
+        Database: "Neo4J",
+        Libraries: "React, D3",
         icons: [react, neo4j, d3]
       }
     },
@@ -57,7 +61,14 @@ export const PROJECTS = {
       tests.`,
       company: "SIX Payments",
       when: "6 months",
-      icon: "ic:outline-work"
+      icon: "ic:outline-work",
+      skills: {
+        Languages: "COBOL, C++, Java",
+        Framework: "JUnit, Mockito",
+        IDE: "Eclipse",
+        Software: "SVN, SQuirreL SQL",
+        icons: [cplusplus, java]
+      }
     },
     {
       description: `Development of a mobile app
@@ -65,7 +76,12 @@ export const PROJECTS = {
       blockchain to invest in ICO`,
       company: "ti&m",
       when: "3 months",
-      icon: "ic:outline-work"
+      icon: "ic:outline-work",
+      skills: {
+        Framework: "React Native, Node.js", 
+        Languages: "JavaScript, Solidity",
+        icons: [nodejs, react, solidity]
+      }
     },
     {
       description: `Development of an application
@@ -74,7 +90,13 @@ export const PROJECTS = {
       joint-mass model`,
       company: "Università degli Studi di Genova",
       when: "6 months",
-      icon: "fa-solid:university"
+      icon: "fa-solid:university",
+      skills: {
+        Languages: "C++",
+        IDE: "Visual Studio",
+        Software: "EyesWeb",
+        icons: [cplusplus]
+      }
     }
   ],
 }

@@ -13,13 +13,10 @@ const profileImageUrl = "https://lh3.googleusercontent.com/JZY0oViJsH5xUfCSkRucF
 
 export const Hero = () => {
   return (
-    <div className="pt-32 lg:pt-72 flex flex-col lg:flex-row justify-between space-y-20 lg:space-y-0">
-      <div className="justify-center">
-        <ScrollAnimation animateIn="fadeInDown">
-          <img className="w-full lg:w-5/6" src={profileImageUrl} alt="Profile picture" />
-        </ScrollAnimation>
-      </div>
-      <div className="w-full">
+    <div className="flex flex-col">
+        <div className="flex flex-col lg:flex-row space-y-5 lg:space-x-10 lg:space-y-0">
+        <img className="object-none object-[47%_30%] h-52 w-52 rounded-lg" src={profileImageUrl} alt="Profile pic" />
+        <div>
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-3xl">{hero.hello}</p>
         </ScrollAnimation>
@@ -32,8 +29,10 @@ export const Hero = () => {
         <ScrollAnimation animateIn="fadeInUp">
           <p className="text-3xl mb-8">{hero.smallResume} </p>
         </ScrollAnimation>
+        </div>
+        </div>
+      
         <About />
-      </div>
     </div>
   )
 }

@@ -27,7 +27,7 @@ export const Card = ({ title, where, when, icon, company, description, skills }:
     <div className="flex space-x-4">
         {
             skills?.icons?.map((skill) => (
-                <Icon width={40} icon={skill?.icon} title={skill?.name} className="flex items-center" />
+                <Icon width={40} height={40} icon={skill?.icon} title={skill?.name} className="flex items-center" />
             ))
         }
     </div>
@@ -41,7 +41,7 @@ export const Card = ({ title, where, when, icon, company, description, skills }:
                 <div className="flex flex-col space-y-10">
                     <div className="flex items-center justify-between">
                         {
-                            [<Icon icon={icon}/>, company].map((el) => el)
+                            [<Icon icon={icon}/>, company]
                         }
                     </div>
                     <div className="text-4xl font-bold">
