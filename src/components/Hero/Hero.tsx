@@ -4,7 +4,7 @@ import { About } from "../About/About"
 export const hero = {
   hello: "Hello 👋, I'm",
   name: "Andrea Magazzini",
-  title: "Professional Software Engineer",
+  title: "Senior Software Engineer",
   smallResume: "Dynamic, open minded and fast learner",
   contacts: "Contacts",
 }
@@ -14,25 +14,25 @@ const profileImageUrl = "https://lh3.googleusercontent.com/JZY0oViJsH5xUfCSkRucF
 export const Hero = () => {
   return (
     <div className="flex flex-col">
-        <div className="flex flex-col lg:flex-row space-y-5 lg:space-x-10 lg:space-y-0">
+      <div className="flex flex-col lg:flex-row space-y-5 lg:space-x-10 lg:space-y-0">
         <img className="object-none object-[47%_30%] h-52 w-52 rounded-lg" src={profileImageUrl} alt="Profile pic" />
         <div>
-        <ScrollAnimation animateIn="fadeInUp">
-          <p className="text-3xl">{hero.hello}</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp">
-          <h1 className="text-7xl">{hero.name}</h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp">
-          <h3 className="my-3 text-green-500">{hero.title}</h3>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp">
-          <p className="text-3xl mb-8">{hero.smallResume} </p>
-        </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <p className="text-3xl">{hero.hello}</p>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <h1 className="text-7xl">{hero.name}</h1>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <h3 className="my-3 text-green-500">{hero.title}</h3>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInUp">
+            <p className="text-3xl mb-8">{hero.smallResume} </p>
+          </ScrollAnimation>
         </div>
-        </div>
-      
-        <About />
+      </div>
+
+      <About />
     </div>
   )
 }
