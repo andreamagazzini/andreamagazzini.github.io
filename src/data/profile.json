@@ -1,0 +1,521 @@
+{
+  "personal": {
+    "name": "Andrea Magazzini",
+    "title": "Senior Full Stack Engineer",
+    "tagline": "Dynamic, open-minded, and fast learner with international experience",
+    "summary": "Adept at turning ideas into working solutions, mentoring teams, and delivering robust software for startups, corporates, and educational projects. Always motivated by social impact, continuous learning, and sharing knowledge.",
+    "email": "andreamaga4@gmail.com",
+    "phone": "+41763721444",
+    "location": "Zürich, Switzerland",
+    "nationality": "Italian",
+    "status": "Digital Nomad",
+    "profileImage": "/avatar.png",
+    "cvUrl": "https://drive.google.com/file/d/1ApQZKbaIV0C5dkV4kVHi35_NXmpE2Rcz/view?usp=sharing",
+    "oneHourVibe": "https://onehourvibecoding.vercel.app",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/andreamagazzini/",
+      "github": "https://github.com/andreamagazzini",
+      "telegram": "https://t.me/andreamagazzini"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "Dynamic, open-minded, and fast learner: I consider these skills to be my strengths.",
+      "I studied in 3 different Universities in Italy, Norway and France where I achieved a BSc in Electronic Engineering and an European MSc double degree in Advanced Robotics.",
+      "My professional career started working in a corporate as Software Engineer in Switzerland, where I improved my technical skills for about 4 years. Since 2021 I decided to get more experiences in startups to have more flexibility and face challenges in different ways.",
+      "Currently living as a digital nomad, I combine my passion for technology with my love for travel and exploring new cultures. This lifestyle allows me to work with diverse teams from around the world while experiencing different perspectives.",
+      "Being social and getting in touch with new people, from different cultures, in order to share knowledge and ideas, has always brought me inspiration and new ways of thinking.",
+      "I always try to adapt myself because I think nothing is static in this World.",
+      "Pantarei, everything flows"
+    ]
+  },
+  "softSkills": [
+    {
+      "name": "Resilience",
+      "description": "Expert-level resilience demonstrated through successfully navigating multiple company closures and layoffs, always leveraging personal networks and maintaining forward momentum. Turned challenging situations into growth opportunities, consistently finding new roles and adapting career trajectory without losing professional momentum.",
+      "level": 5
+    },
+    {
+      "name": "Adaptability",
+      "description": "Expert-level adaptability shown through digital nomad lifestyle (55+ countries since 2021), seamlessly adapting to different cultures, time zones, and work environments. Studied in 3 different universities across Italy, Norway, and France. Successfully transitioned from corporate to startup environments, and adapted architecture during business pivots (uDroppy technical pivot).",
+      "level": 5
+    },
+    {
+      "name": "Mentoring",
+      "description": "Proficient to expert in mentoring demonstrated through onboarding and upskilling junior developers (uDroppy), accelerating ramp-up in React/Next.js and raising code quality. Teaching at Tomorrow University (4.5/5 feedback scores) and Challenge Network (20+ beginners), with strong engagement and clarity. Led collaborative discussions and live mentoring sessions that boosted learner outcomes.",
+      "level": 4.5
+    },
+    {
+      "name": "Team Development",
+      "description": "Proficient in team development through structured feedback, fostering autonomy, and supporting growth of junior teammates. Supported onboarding within international remote teams at Tomorrow University. Facilitated workshops for children (Hack an App) and organized community sprints that enabled talents to collaborate and learn together.",
+      "level": 4
+    },
+    {
+      "name": "Collaboration",
+      "description": "Proficient in collaboration, especially in remote/async environments. Experienced working with diverse international teams across product, design, and backend. Successfully coordinated with teams from around the world, enabling effective cross-cultural collaboration. Managed association budgets and organized events for large student groups (AEGEE, ESN).",
+      "level": 4
+    },
+    {
+      "name": "Communication",
+      "description": "Proficient in clear communication through group facilitation, structured information exchange, and effective teaching. Achieved strong feedback for engagement and clarity in teaching roles. Led collaborative discussions that boosted learner engagement. Clear communication in international, remote settings with diverse cultural backgrounds.",
+      "level": 4
+    },
+    {
+      "name": "Creativity",
+      "description": "Proficient in creativity demonstrated through innovative solutions: designed 3 innovative online learning challenges (IoT, Cybersecurity, Robotics), initiated proof-of-concept visualizations with D3.js and Neo4j, and spearheaded ideation of community sprints structure. Delivered creative programming workshops for children, stimulating tech curiosity.",
+      "level": 4
+    },
+    {
+      "name": "Pragmatism",
+      "description": "Proficient in pragmatism through identifying quick wins for MVP delivery under time constraints while maintaining clean code and sustainable architecture. Built multiple MVPs from scratch (A-List platform, uDroppy SaaS). Offers rapid MVP creation services. Successfully integrated legacy APIs under challenging conditions and maintained legacy applications.",
+      "level": 4.5
+    },
+    {
+      "name": "Time Management",
+      "description": "Proficient in time management through effectively managing multiple concurrent priorities: Challenge Owner at Tomorrow University, Co-founder & CTO at A-List, and teaching roles simultaneously. Successfully balanced full-time roles with side projects and continuous learning. Managed association budgets and organized events while maintaining professional commitments.",
+      "level": 4
+    },
+    {
+      "name": "Stress Handling",
+      "description": "Proficient in stress handling through staying calm under pressure during company closures, layoffs, and challenging technical situations. Successfully improvised when necessary (legacy API integrations, technical pivots). Maintained composure while managing release pipelines across Apple Store and Google Play, and during rapid MVP development under tight deadlines.",
+      "level": 4
+    }
+  ],
+  "experience": [
+    {
+      "title": "Challenge Owner",
+      "company": "Tomorrow University",
+      "location": "Remote (Berlin, Germany)",
+      "period": "Jul 2025 – Present",
+      "type": "Education",
+      "description": "Designed and delivered innovative online learning challenges with hands-on tools.",
+      "achievements": [
+        "Designed and delivered 3 innovative online learning challenges (IoT, Cybersecurity, Robotics) with hands-on tools (Microbit, Thunkable, flow diagrams)",
+        "Achieved learner feedback scores of 4.5/5 (IoT module) and enabled highly practical project experience for students",
+        "Led collaborative discussions and live mentoring, boosting learner engagement and capstone outcomes",
+        "Supported growth and onboarding of junior teammates within an international remote team"
+      ],
+      "technologies": ["Next.js", "React", "TypeScript", "AWS Lambda", "Microbit", "Thunkable"],
+      "link": "https://www.tomorrow.university"
+    },
+    {
+      "title": "Co-founder & CTO",
+      "company": "A-List (Startup)",
+      "location": "Remote",
+      "period": "Jul 2025 – Present",
+      "type": "Startup",
+      "description": "Built the MVP for a talent/community platform focused on post-hiring support and upskilling.",
+      "achievements": [
+        "Built the MVP for a talent/community platform (Next.js, Supabase, Claude, Whisper), focused on post-hiring support and upskilling",
+        "Spearheaded ideation and structure of community \"sprints,\" enabling talents to collaborate and learn",
+        "Developed platform functionalities to track candidate activity and facilitate talent-company matching"
+      ],
+      "technologies": ["Next.js", "Supabase", "Claude AI", "Whisper", "TypeScript", "React"],
+      "link": null
+    },
+    {
+      "title": "Senior Full Stack Engineer",
+      "company": "Tomorrow University",
+      "location": "Remote (Berlin, Germany)",
+      "period": "2024 – 2025",
+      "type": "Full-time",
+      "description": "Drove implementation of xGrowth features including AI virtual assistant.",
+      "achievements": [
+        "Drove implementation of xGrowth features (AI virtual assistant \"Evo\"), collaborating with product, design, and backend teams",
+        "Contributed to code optimization and scalability, supporting platform usability for thousands of users"
+      ],
+      "technologies": ["React", "TypeScript", "AWS Lambda", "Node.js", "AI/ML"],
+      "link": "https://www.tomorrow.university"
+    },
+    {
+      "title": "Senior Software Engineer",
+      "company": "Helpany (formerly Sedimentum AG)",
+      "location": "Remote (Cham, Switzerland)",
+      "period": "May 2023 - Nov 2023",
+      "type": "Full-time",
+      "description": "Delivered new mobile hybrid features for IoT safety devices.",
+      "achievements": [
+        "Delivered new mobile hybrid features for IoT safety devices, handling release pipelines across Apple Store and Google Play",
+        "Supported QA and bug fixing, ensuring high device reliability for end users"
+      ],
+      "technologies": ["React Native", "TypeScript", "iOS", "Android", "IoT"],
+      "link": "https://helpany.com/"
+    },
+    {
+      "title": "Full Stack Engineer",
+      "company": "uDroppy INC.",
+      "location": "Remote (Dubai, UAE)",
+      "period": "Apr 2021 - Nov 2022",
+      "type": "Full-time",
+      "description": "Built a SaaS e-commerce platform from scratch, handling full-stack development.",
+      "achievements": [
+        "Built a SaaS e-commerce platform from scratch, handling the shift from frontend (Next.js) to backend with AWS serverless",
+        "Integrated legacy APIs under challenging conditions",
+        "Onboarded and mentored junior developer, accelerating her ramp-up in React/Next.js and raising code quality across the team",
+        "Led technical pivot as business focus changed, adapting architecture to new scaling needs"
+      ],
+      "technologies": ["Next.js", "React", "Serverless", "Node.js", "JavaScript", "TypeScript", "AWS", "Vercel"],
+      "link": "https://www.udroppy.com/"
+    },
+    {
+      "title": "Professional Software Engineer",
+      "company": "ti&m AG",
+      "location": "Zürich, Switzerland",
+      "period": "Jun 2017 - Mar 2021",
+      "type": "Full-time",
+      "description": "Developed full-stack banking solutions and marketing systems.",
+      "achievements": [
+        "Developed full-stack banking solutions (Java/Spring, React) and marketing systems (Oracle, Kafka), improving feature delivery across teams",
+        "Initiated proof-of-concept visualizations with D3.js and Neo4j to support innovative client solutions",
+        "Maintained and modernized legacy applications (COBOL, Java, C++ testing)"
+      ],
+      "technologies": ["React", "Redux", "Saga", "Spring", "JavaScript", "TypeScript", "Java", "Docker", "Jenkins", "D3.js", "Neo4j", "Oracle", "Kafka"],
+      "link": "https://www.ti8m.com/"
+    },
+    {
+      "title": "Web Programming Instructor",
+      "company": "Challenge Network",
+      "location": "Remote",
+      "period": "Mar 2024 – Apr 2024",
+      "type": "Teaching",
+      "description": "Taught HTML, CSS, JavaScript to beginners with project-based learning.",
+      "achievements": [
+        "Taught HTML, CSS, JavaScript to 20+ beginners",
+        "Implemented live coding and project-based learning",
+        "Earned strong feedback for engagement and clarity"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "Teaching"],
+      "link": null
+    },
+    {
+      "title": "Workshop Facilitator",
+      "company": "Hack an App (UBS/ti&m)",
+      "location": "Switzerland",
+      "period": "Multiple events",
+      "type": "Teaching",
+      "description": "Delivered creative programming workshops for children, stimulating tech curiosity and inclusion.",
+      "achievements": [
+        "Facilitated programming workshops for children",
+        "Promoted tech curiosity and inclusion through hands-on learning",
+        "Collaborated with UBS and ti&m to deliver educational events"
+      ],
+      "technologies": ["Teaching", "Workshop Facilitation", "Programming"],
+      "link": null
+    }
+  ],
+  "volunteering": [
+    {
+      "title": "Treasurer",
+      "organization": "AEGEE Genova",
+      "period": "1 year",
+      "description": "Managed association budgets, organized events, reporting and transparency for large student groups."
+    },
+    {
+      "title": "Treasurer",
+      "organization": "ESN Erasmus Genova",
+      "period": "2 years",
+      "description": "Managed association budgets, organized events, reporting and transparency for large student groups."
+    },
+    {
+      "title": "Active Member",
+      "organization": "Precious Plastic Zurich",
+      "period": "2 years",
+      "description": "Active member in plastic recycling and sustainability projects."
+    }
+  ],
+  "education": [
+    {
+      "title": "Digital Garage - Switzerland Academy",
+      "institution": "UIIP",
+      "location": "Milan, Italy",
+      "period": "Jan 2017 - Mar 2017",
+      "description": "Intensive web development training program focused on modern web technologies and best practices"
+    },
+    {
+      "title": "European Master on Advanced Robotics (EMARO)",
+      "institution": "Double Degree Program",
+      "location": "France & Italy",
+      "period": "2014 - 2016",
+      "description": "Double degree European Master on Advanced Robotics (EMARO) between Ecole Centrale de Nantes (France) and Università degli studi di Genova (Italy), focusing on advanced robotics, automation, and intelligent systems",
+      "details": [
+        "European Master II on Advanced Robotics - Università degli studi di Genova, Italy (2015-2016)",
+        "European Master I on Advanced Robotics - Ecole Centrale de Nantes, France (2014-2015)"
+      ]
+    },
+    {
+      "title": "Bachelor's Degree in Electronic Engineering",
+      "institution": "Università degli studi di Genova",
+      "location": "Genova, Italy",
+      "period": "2010 - 2014",
+      "description": "Bachelor's degree in Electronic Engineering covering electronics, control systems, signal processing, and embedded systems. Erasmus semester at Universitet i Agder, Norway (Aug 2012 - Dec 2012)"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Italian",
+      "proficiency": "Native",
+      "level": 5
+    },
+    {
+      "name": "English",
+      "proficiency": "Business Fluent",
+      "level": 4.5
+    },
+    {
+      "name": "Spanish",
+      "proficiency": "Business Fluent",
+      "level": 4.5
+    },
+    {
+      "name": "French",
+      "proficiency": "Fluent",
+      "level": 4
+    },
+    {
+      "name": "Portuguese",
+      "proficiency": "Fluent",
+      "level": 4
+    },
+    {
+      "name": "German",
+      "proficiency": "Conversational",
+      "level": 3
+    }
+  ],
+  "passions": {
+    "travel": {
+      "title": "World Traveler",
+      "description": "55+ countries visited, nomad since 2021, passionate about multicultural collaboration, adventure, and social impact.",
+      "icon": "mdi:earth"
+    },
+    "innovation": {
+      "title": "Innovation & Teaching",
+      "description": "Driven by innovation, hands-on projects, and teaching others, especially when technology creates value for people and society.",
+      "icon": "mdi:lightbulb-on"
+    },
+    "learning": {
+      "title": "Continuous Learning",
+      "description": "Always curious, dedicated to expanding expertise in AI and interested in web3, decentralization, and the next wave of digital transformation.",
+      "icon": "mdi:school"
+    }
+  },
+  "services": [
+    {
+      "title": "Rapid MVP Creation",
+      "description": "One Hour Vibe Coding - Rapid MVP creation and client collaboration",
+      "link": "https://onehourvibecoding.vercel.app",
+      "icon": "mdi:rocket-launch"
+    },
+    {
+      "title": "Freelance Projects",
+      "description": "Open for freelance projects and technical consulting",
+      "link": null,
+      "icon": "mdi:briefcase"
+    },
+    {
+      "title": "Technical Teaching",
+      "description": "Available for technical teaching, workshops, and mentoring",
+      "link": null,
+      "icon": "mdi:teach"
+    }
+  ],
+  "hrMessage": "Creative, resilient, and versatile engineer with strong mentoring skills and international experience. If you need someone who builds, adapts, and inspires — even if not a perfect fit today, don't forget this profile tomorrow.",
+  "technicalSkills": {
+    "frontend": {
+      "category": "Frontend Development",
+      "description": "8+ years building production React/Next.js applications at ti&m, uDroppy, Tomorrow University, and A-List. Expert in modern UI/UX, state management, and performance optimization. Taught HTML/CSS/JavaScript to 20+ beginners, demonstrating deep understanding of web fundamentals.",
+      "skills": [
+        {
+          "name": "React",
+          "level": 5,
+          "description": "Expert-level proficiency with 8+ years of experience. Built production applications at ti&m, uDroppy, Tomorrow University, and A-List. Deep knowledge of hooks, context, state management, and performance optimization."
+        },
+        {
+          "name": "Next.js",
+          "level": 5,
+          "description": "Expert in Next.js with extensive experience building full-stack applications. Built MVPs for uDroppy SaaS platform and A-List talent platform. Proficient in SSR, SSG, API routes, and deployment optimization."
+        },
+        {
+          "name": "TypeScript",
+          "level": 5,
+          "description": "Expert-level TypeScript usage across all recent projects. Strong typing practices, generics, and type-safe architecture. Used extensively in React, Next.js, Node.js, and React Native projects."
+        },
+        {
+          "name": "JavaScript",
+          "level": 5,
+          "description": "Expert JavaScript developer with deep understanding of ES6+, async patterns, and modern frameworks. Used across full-stack development, teaching (Challenge Network), and legacy system modernization."
+        },
+        {
+          "name": "React Native",
+          "level": 4,
+          "description": "Proficient in React Native for mobile development. Delivered mobile hybrid features for IoT safety devices at Helpany (formerly Sedimentum AG), handling release pipelines across Apple Store and Google Play."
+        },
+        {
+          "name": "D3.js",
+          "level": 4,
+          "description": "Proficient in data visualization. Initiated proof-of-concept visualizations with D3.js and Neo4j at ti&m to support innovative client solutions and data-driven insights."
+        },
+        {
+          "name": "HTML/CSS",
+          "level": 4.5,
+          "description": "Strong proficiency in HTML and CSS. Taught HTML, CSS, and JavaScript to 20+ beginners at Challenge Network with project-based learning. Used in all web development projects."
+        }
+      ]
+    },
+    "backend": {
+      "category": "Backend Development",
+      "description": "Built serverless architectures with AWS Lambda for uDroppy SaaS and Tomorrow University AI assistant. Developed full-stack banking solutions with Java/Spring at ti&m. Handled legacy API integrations and modernized COBOL/Java systems. Introduced automated testing at uDroppy. Strong experience in RESTful APIs, real-time applications, and enterprise architectures.",
+      "skills": [
+        {
+          "name": "Node.js",
+          "level": 5,
+          "description": "Expert in Node.js backend development. Built serverless APIs with AWS Lambda, RESTful services, and real-time applications. Used in uDroppy, Tomorrow University (AI assistant), and A-List platforms."
+        },
+        {
+          "name": "Serverless",
+          "level": 4.5,
+          "description": "Proficient in serverless architecture. Built uDroppy SaaS platform with AWS serverless, handling the shift from frontend to backend. Experience with AWS Lambda, API Gateway, and serverless deployment patterns."
+        },
+        {
+          "name": "Java",
+          "level": 4,
+          "description": "Proficient in Java development. Developed full-stack banking solutions with Java/Spring at ti&m. Maintained and modernized legacy applications, including COBOL and Java systems."
+        },
+        {
+          "name": "Spring",
+          "level": 4,
+          "description": "Proficient in Spring framework. Developed banking solutions and enterprise applications at ti&m, improving feature delivery across teams with Spring-based architectures."
+        },
+        {
+          "name": "C++",
+          "level": 3,
+          "description": "Competent in C++ from engineering background and testing legacy applications. Used for testing and maintaining legacy systems at ti&m."
+        },
+        {
+          "name": "COBOL",
+          "level": 3,
+          "description": "Competent in COBOL from legacy system maintenance. Maintained and modernized legacy COBOL applications at ti&m, ensuring system reliability and integration with modern systems."
+        }
+      ]
+    },
+    "cloudDevOps": {
+      "category": "Cloud & DevOps",
+      "description": "Built complete serverless SaaS platform (uDroppy) with AWS Lambda, API Gateway, and Vercel. Deployed and optimized Next.js applications supporting thousands of users. Experience with Docker containerization, Jenkins CI/CD pipelines, and edge functions. Successfully managed release pipelines across Apple Store and Google Play.",
+      "skills": [
+        {
+          "name": "AWS",
+          "level": 4.5,
+          "description": "Proficient in AWS services. Built serverless architectures with Lambda, API Gateway, and other AWS services. Used in uDroppy SaaS platform and Tomorrow University (xGrowth features with AI assistant)."
+        },
+        {
+          "name": "Docker",
+          "level": 4,
+          "description": "Proficient in containerization with Docker. Used for development environments, deployment pipelines, and application containerization at ti&m and other projects."
+        },
+        {
+          "name": "Vercel",
+          "level": 4.5,
+          "description": "Proficient in Vercel deployment and optimization. Used for deploying Next.js applications, including uDroppy platform and personal projects. Strong understanding of edge functions and performance optimization."
+        },
+        {
+          "name": "Jenkins",
+          "level": 3.5,
+          "description": "Competent in CI/CD with Jenkins. Used for build pipelines and deployment automation at ti&m for banking solutions and enterprise applications."
+        },
+        {
+          "name": "Git",
+          "level": 5,
+          "description": "Expert in Git version control. Used extensively across all projects for collaboration, code review, and team coordination. Mentored junior developers on Git best practices and PR workflows at uDroppy."
+        }
+      ]
+    },
+    "databases": {
+      "category": "Databases & Data",
+      "description": "Built A-List platform MVP with Supabase for authentication and real-time features. Developed marketing systems with Oracle and Kafka at ti&m for event streaming. Initiated proof-of-concept with Neo4j graph database for innovative client solutions. Experience in database design, query optimization, and real-time data processing.",
+      "skills": [
+        {
+          "name": "Supabase",
+          "level": 4.5,
+          "description": "Proficient in Supabase for backend-as-a-service. Built A-List talent platform MVP with Supabase, handling authentication, database, and real-time features for the community platform."
+        },
+        {
+          "name": "Neo4j",
+          "level": 4,
+          "description": "Proficient in graph databases. Initiated proof-of-concept visualizations with Neo4j and D3.js at ti&m to support innovative client solutions and relationship mapping."
+        },
+        {
+          "name": "Kafka",
+          "level": 4,
+          "description": "Proficient in event streaming with Kafka. Developed marketing systems using Kafka at ti&m, handling real-time data processing and event-driven architectures."
+        },
+        {
+          "name": "Oracle",
+          "level": 3.5,
+          "description": "Competent in Oracle databases. Developed marketing systems with Oracle at ti&m, including database design and query optimization for enterprise applications."
+        }
+      ]
+    },
+    "aiMl": {
+      "category": "AI & Machine Learning",
+      "description": "Drove implementation of AI virtual assistant 'Evo' at Tomorrow University, collaborating across product, design, and backend teams. Integrated Claude AI and Whisper into A-List platform for intelligent features and audio processing. Actively exploring AI/ML integration with focus on practical applications and user value.",
+      "skills": [
+        {
+          "name": "Claude AI",
+          "level": 4,
+          "description": "Proficient in integrating Claude AI into applications. Built A-List platform with Claude AI for intelligent features, focusing on post-hiring support and upskilling functionalities."
+        },
+        {
+          "name": "Whisper",
+          "level": 4,
+          "description": "Proficient in OpenAI Whisper for speech-to-text. Integrated Whisper into A-List platform for audio processing and transcription features in the talent/community platform."
+        },
+        {
+          "name": "AI/ML Integration",
+          "level": 4.5,
+          "description": "Proficient in AI/ML integration. Drove implementation of AI virtual assistant \"Evo\" at Tomorrow University, collaborating with product, design, and backend teams to deliver intelligent features."
+        }
+      ]
+    },
+    "iotEducation": {
+      "category": "IoT & Educational Tools",
+      "description": "Designed and delivered 3 innovative online learning challenges using Microbit and Thunkable at Tomorrow University (4.5/5 feedback). Delivered mobile hybrid features for IoT safety devices at Helpany (formerly Sedimentum AG). Strong background in robotics engineering (European Master in Advanced Robotics) applied to practical IoT education and device integration.",
+      "skills": [
+        {
+          "name": "Microbit",
+          "level": 4,
+          "description": "Proficient in Microbit for educational IoT projects. Designed and delivered innovative online learning challenges at Tomorrow University, using Microbit for hands-on IoT education with practical project experiences."
+        },
+        {
+          "name": "Thunkable",
+          "level": 4,
+          "description": "Proficient in Thunkable for no-code mobile app development in education. Used in Tomorrow University challenges to enable students to build mobile applications without traditional coding, fostering practical learning."
+        },
+        {
+          "name": "IoT Development",
+          "level": 4,
+          "description": "Proficient in IoT development. Delivered mobile hybrid features for IoT safety devices at Helpany (formerly Sedimentum AG), handling device integration, data processing, and mobile app connectivity."
+        }
+      ]
+    }
+  },
+  "skills": {
+    "react": { "icon": "logos:react", "name": "React" },
+    "nodejs": { "icon": "logos:nodejs-icon", "name": "Node.js" },
+    "nextjs": { "icon": "logos:nextjs-icon", "name": "Next.js" },
+    "spring": { "icon": "logos:spring-icon", "name": "Spring" },
+    "serverless": { "icon": "logos:serverless", "name": "Serverless" },
+    "supabase": { "icon": "logos:supabase-icon", "name": "Supabase" },
+    "aws": { "icon": "logos:aws", "name": "AWS" },
+    "neo4j": { "icon": "logos:neo4j", "name": "Neo4j" },
+    "d3": { "icon": "logos:d3", "name": "D3.js" },
+    "cplusplus": { "icon": "logos:c-plusplus", "name": "C++" },
+    "java": { "icon": "logos:java", "name": "Java" },
+    "solidity": { "icon": "logos:solidity", "name": "Solidity" },
+    "javascript": { "icon": "logos:javascript", "name": "JavaScript" },
+    "typescript": { "icon": "logos:typescript-icon", "name": "TypeScript" },
+    "reactnative": { "icon": "logos:react", "name": "React Native" },
+    "docker": { "icon": "logos:docker-icon", "name": "Docker" },
+    "kafka": { "icon": "logos:apache-kafka", "name": "Kafka" }
+  }
+}
