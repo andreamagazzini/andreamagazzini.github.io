@@ -16,12 +16,6 @@ interface FormatOption {
 
 const formatOptions: FormatOption[] = [
   {
-    id: 'standard',
-    label: 'PDF (Standard)',
-    description: 'Standard format suitable for most countries',
-    icon: 'mdi:file-pdf-box'
-  },
-  {
     id: 'european',
     label: 'PDF (European CV)',
     description: 'European format with detailed personal information',
@@ -31,6 +25,12 @@ const formatOptions: FormatOption[] = [
     id: 'us',
     label: 'PDF (US Resume)',
     description: 'US format - concise and skills-focused',
+    icon: 'mdi:file-pdf-box'
+  },
+  {
+    id: 'standard',
+    label: 'PDF (Standard)',
+    description: 'Standard format suitable for most countries',
     icon: 'mdi:file-pdf-box'
   }
 ];

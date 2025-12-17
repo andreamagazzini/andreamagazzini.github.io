@@ -82,6 +82,12 @@ const styles = StyleSheet.create({
     color: '#444',
     marginTop: 5,
   },
+  languageItem: {
+    fontSize: 10,
+    lineHeight: 1.4,
+    marginBottom: 3,
+    color: '#333',
+  },
   technologies: {
     fontSize: 9,
     color: '#666',
@@ -255,15 +261,33 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
         </View>
       );
     } else if (format === 'european') {
-      // European CV: Full about section
+      // European CV: About + Languages side by side to save space
       return (
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{about.title}</Text>
-          {about.paragraphs.map((paragraph: string, index: number) => (
-            <Text key={index} style={styles.paragraph}>
-              {paragraph}
-            </Text>
-          ))}
+          <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
+            {/* About text column */}
+            <View style={{ flex: 2, paddingRight: 16 }}>
+              {about.paragraphs.map((paragraph: string, index: number) => (
+                <Text key={index} style={styles.paragraph}>
+                  {paragraph}
+                </Text>
+              ))}
+            </View>
+            {/* Languages column (entire block kept together) */}
+            {languages && languages.length > 0 && (
+              <View style={{ flex: 1 }} wrap={false}>
+                <Text style={[styles.sectionTitle, { fontSize: 14, marginBottom: 6 }]}>
+                  Languages
+                </Text>
+                {languages.map((lang: any, index: number) => (
+                  <Text key={index} style={styles.languageItem}>
+                    {lang.name}: {lang.proficiency}
+                  </Text>
+                ))}
+              </View>
+            )}
+          </View>
         </View>
       );
     } else {
@@ -283,8 +307,11 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
 
   // Render a single experience item
   const renderExperienceItem = (exp: any, index: number) => {
+    const hasAchievements = exp.achievements && exp.achievements.length > 0;
+
     return (
-      <View key={index} style={styles.experienceItem}>
+      // Keep each experience item together on the same page (no ugly splits)
+      <View key={index} style={styles.experienceItem} wrap={false}>
         <View style={styles.experienceHeader}>
           <View>
             <Text style={styles.jobTitle}>{exp.title}</Text>
@@ -293,28 +320,30 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
           <Text style={styles.period}>{exp.period}</Text>
         </View>
         <Text style={styles.location}>{exp.location}</Text>
-        {format === 'us' && exp.achievements && exp.achievements.length > 0 ? (
-          // US Resume: Focus on achievements
-          <View style={{ marginTop: 5 }}>
-            {exp.achievements.map((achievement: string, idx: number) => (
-              <Text key={idx} style={[styles.description, { marginTop: 3 }]}>
-                • {achievement}
-              </Text>
-            ))}
-          </View>
-        ) : (
-          // Standard and European: Description
-          exp.description && (
-            <Text style={styles.description}>{exp.description}</Text>
-          )
+        {/* Description logic:
+           - US format: no description (only achievements)
+           - European format: skip description when achievements exist to avoid repetition
+           - Standard format: show description as usual
+        */}
+        {format !== 'us' && (!hasAchievements || format !== 'european') && exp.description && (
+          <Text style={styles.description}>{exp.description}</Text>
         )}
-        {format === 'european' && exp.achievements && exp.achievements.length > 0 && (
+
+        {/* Achievements / bullet points */}
+        {hasAchievements && (
           <View style={{ marginTop: 5 }}>
-            {exp.achievements.slice(0, 3).map((achievement: string, idx: number) => (
-              <Text key={idx} style={[styles.description, { fontSize: 9, marginTop: 2 }]}>
-                • {achievement}
-              </Text>
-            ))}
+            {format === 'us' &&
+              exp.achievements.map((achievement: string, idx: number) => (
+                <Text key={idx} style={[styles.description, { marginTop: 3 }]}>
+                  • {achievement}
+                </Text>
+              ))}
+            {format === 'european' &&
+              exp.achievements.slice(0, 3).map((achievement: string, idx: number) => (
+                <Text key={idx} style={[styles.description, { fontSize: 9, marginTop: 2 }]}>
+                  • {achievement}
+                </Text>
+              ))}
           </View>
         )}
         {exp.technologies && exp.technologies.length > 0 && (
@@ -350,15 +379,23 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
     return (
       <>
         {workExperience.length > 0 && (
-          <View style={styles.section}>
+          // Add a page break after Work Experience when Teaching Experience also exists,
+          // so "Teaching Experience" always starts at the top of a new page
+          <View style={styles.section} break={teachingExperience.length > 0}>
             <Text style={styles.sectionTitle}>Work Experience</Text>
             {workExperience.map((exp: any, index: number) => renderExperienceItem(exp, index))}
           </View>
         )}
         {teachingExperience.length > 0 && (
           <View style={styles.section}>
-            <Text style={styles.sectionTitle}>Teaching Experience</Text>
-            {teachingExperience.map((exp: any, index: number) => renderExperienceItem(exp, index))}
+            {/* Keep the Teaching Experience title + first item together */}
+            <View wrap={false}>
+              <Text style={styles.sectionTitle}>Teaching Experience</Text>
+              {renderExperienceItem(teachingExperience[0], 0)}
+            </View>
+            {teachingExperience.slice(1).map((exp: any, index: number) =>
+              renderExperienceItem(exp, index + 1)
+            )}
           </View>
         )}
       </>
@@ -371,9 +408,13 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
       // US Resume: Brief education
       return (
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Education</Text>
+          {/* Keep the Education title + underline together on the same page */}
+          <View wrap={false}>
+            <Text style={styles.sectionTitle}>Education</Text>
+          </View>
           {education.slice(0, 2).map((edu: any, index: number) => (
-            <View key={index} style={styles.educationItem}>
+            // Avoid splitting a single education entry across pages
+            <View key={index} style={styles.educationItem} wrap={false}>
               <Text style={styles.educationTitle}>{edu.title}</Text>
               <Text style={styles.institution}>
                 {edu.institution} - {edu.location} ({edu.period})
@@ -386,9 +427,13 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
       // Standard and European: Full education
       return (
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>Education</Text>
+          {/* Keep the Education title + underline together on the same page */}
+          <View wrap={false}>
+            <Text style={styles.sectionTitle}>Education</Text>
+          </View>
           {education.map((edu: any, index: number) => (
-            <View key={index} style={styles.educationItem}>
+            // Avoid splitting a single education entry across pages
+            <View key={index} style={styles.educationItem} wrap={false}>
               <Text style={styles.educationTitle}>{edu.title}</Text>
               <Text style={styles.institution}>
                 {edu.institution} - {edu.location} ({edu.period})
@@ -400,26 +445,8 @@ export const ResumeDocument = ({ data, format = 'standard', profileImageBase64 }
     }
   };
 
-  // Render additional sections for European CV
+  // Render additional sections (currently unused / reserved for future)
   const renderAdditionalSections = () => {
-    if (format === 'european') {
-      return (
-        <>
-          {languages && languages.length > 0 && (
-            <View style={styles.section}>
-              <Text style={styles.sectionTitle}>Languages</Text>
-              {languages.map((lang: any, index: number) => (
-                <View key={index} style={{ marginBottom: 5 }}>
-                  <Text style={styles.paragraph}>
-                    {lang.name}: {lang.proficiency}
-                  </Text>
-                </View>
-              ))}
-            </View>
-          )}
-        </>
-      );
-    }
     return null;
   };
 

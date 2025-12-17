@@ -68,18 +68,18 @@
     },
     {
       "name": "Pragmatism",
-      "description": "Proficient in pragmatism through identifying quick wins for MVP delivery under time constraints while maintaining clean code and sustainable architecture. Built multiple MVPs from scratch (A-List platform, uDroppy SaaS). Offers rapid MVP creation services. Successfully integrated legacy APIs under challenging conditions and maintained legacy applications.",
+      "description": "Proficient in pragmatism through identifying quick wins for MVP delivery under time constraints while maintaining clean code and sustainable architecture. Built multiple MVPs from scratch (including the pre-incorporation A-List platform and uDroppy SaaS). Offers rapid MVP creation services. Successfully integrated legacy APIs under challenging conditions and maintained legacy applications.",
       "level": 4.5
     },
     {
       "name": "Time Management",
-      "description": "Proficient in time management through effectively managing multiple concurrent priorities: Challenge Owner at Tomorrow University, Co-founder & CTO at A-List, and teaching roles simultaneously. Successfully balanced full-time roles with side projects and continuous learning. Managed association budgets and organized events while maintaining professional commitments.",
+      "description": "Proficient in time management through effectively managing multiple concurrent priorities: Challenge Owner at Tomorrow University, Co-founder at A-List, and teaching roles simultaneously. Successfully balanced full-time roles with side projects and continuous learning. Managed association budgets and organized events while maintaining professional commitments.",
       "level": 4
     },
     {
       "name": "Stress Handling",
       "description": "Proficient in stress handling through staying calm under pressure during company closures, layoffs, and challenging technical situations. Successfully improvised when necessary (legacy API integrations, technical pivots). Maintained composure while managing release pipelines across Apple Store and Google Play, and during rapid MVP development under tight deadlines.",
-      "level": 4
+      "level": 4.5
     }
   ],
   "experience": [
@@ -89,7 +89,7 @@
       "location": "Remote (Berlin, Germany)",
       "period": "Jul 2025 – Present",
       "type": "Education",
-      "description": "Designed and delivered innovative online learning challenges with hands-on tools.",
+      "description": "Tomorrow University of Applied Sciences is a German state-recognized, remote-first university focused on empowering impact-driven leaders and changemakers. As a Challenge Owner, I design and deliver innovative online learning challenges with hands-on tools for Master's and MBA learners.",
       "achievements": [
         "Designed and delivered 3 innovative online learning challenges (IoT, Cybersecurity, Robotics) with hands-on tools (Microbit, Thunkable, flow diagrams)",
         "Achieved learner feedback scores of 4.5/5 (IoT module) and enabled highly practical project experience for students",
@@ -100,33 +100,34 @@
       "link": "https://www.tomorrow.university"
     },
     {
-      "title": "Co-founder & CTO",
+      "title": "Senior Full Stack Engineer",
+      "company": "Tomorrow University",
+      "location": "Remote (Berlin, Germany)",
+      "period": "2024 – Present",
+      "type": "Full-time",
+      "description": "Drove implementation of xGrowth, Tomorrow University's growth-focused digital campus area, including an AI assistant and related platform features, working across a data stack with MongoDB for core user/platform data and Strapi/PostgreSQL for structured content.",
+      "achievements": [
+        "Owned key xGrowth product features: AI assistant \"Evo\", the events section, a multilingual experience via Weglot, and the mission journal where learners can post and receive comments from peers.",
+        "Collaborated with product, design, and backend teams to optimize and scale the platform, supporting thousands of users."
+      ],
+      "technologies": ["React", "TypeScript", "AWS Lambda", "Node.js", "AI/ML"],
+      "link": "https://www.tomorrow.university"
+    },
+    {
+      "title": "Co-founder",
       "company": "A-List (Startup)",
       "location": "Remote",
       "period": "Jul 2025 – Present",
       "type": "Startup",
-      "description": "Built the MVP for a talent/community platform focused on post-hiring support and upskilling.",
+      "description": "Co-founded and built the pre-incorporation MVP for a talent/community platform focused on post-hiring support and upskilling.",
       "achievements": [
         "Built the MVP for a talent/community platform (Next.js, Supabase, Claude, Whisper), focused on post-hiring support and upskilling",
         "Spearheaded ideation and structure of community \"sprints,\" enabling talents to collaborate and learn",
-        "Developed platform functionalities to track candidate activity and facilitate talent-company matching"
+        "Developed platform functionalities to track candidate activity and facilitate talent-company matching",
+        "Ran initial pilots with a small recruiting company (WeClose) and travel company WeRoad (OneDay Group), validating the concept with real candidates and hiring teams"
       ],
       "technologies": ["Next.js", "Supabase", "Claude AI", "Whisper", "TypeScript", "React"],
       "link": null
-    },
-    {
-      "title": "Senior Full Stack Engineer",
-      "company": "Tomorrow University",
-      "location": "Remote (Berlin, Germany)",
-      "period": "2024 – 2025",
-      "type": "Full-time",
-      "description": "Drove implementation of xGrowth features including AI virtual assistant.",
-      "achievements": [
-        "Drove implementation of xGrowth features (AI virtual assistant \"Evo\"), collaborating with product, design, and backend teams",
-        "Contributed to code optimization and scalability, supporting platform usability for thousands of users"
-      ],
-      "technologies": ["React", "TypeScript", "AWS Lambda", "Node.js", "AI/ML"],
-      "link": "https://www.tomorrow.university"
     },
     {
       "title": "Senior Software Engineer",
@@ -134,10 +135,11 @@
       "location": "Remote (Cham, Switzerland)",
       "period": "May 2023 - Nov 2023",
       "type": "Full-time",
-      "description": "Delivered new mobile hybrid features for IoT safety devices.",
+      "description": "Worked as a Senior Software Engineer on SAFE-living, a contactless emergency system that automatically calls for help when needed, enhancing safety and quality of life at home.",
       "achievements": [
-        "Delivered new mobile hybrid features for IoT safety devices, handling release pipelines across Apple Store and Google Play",
-        "Supported QA and bug fixing, ensuring high device reliability for end users"
+        "Implemented multiple SAFE-living mobile features (React Native, TypeScript), including in-app payments and improvements to the emergency alert experience.",
+        "Handled the procedures and technical steps required for app validation and releases on both Apple App Store and Google Play.",
+        "Collaborated with more senior engineers plus hardware, data, and support teams on QA and bug fixing, improving reliability of the emergency detection and notification pipeline for end users."
       ],
       "technologies": ["React Native", "TypeScript", "iOS", "Android", "IoT"],
       "link": "https://helpany.com/"
@@ -148,14 +150,14 @@
       "location": "Remote (Dubai, UAE)",
       "period": "Apr 2021 - Nov 2022",
       "type": "Full-time",
-      "description": "Built a SaaS e-commerce platform from scratch, handling full-stack development.",
+      "description": "Built Borderl3ss, a new SaaS logistics platform within the uDroppy ecosystem, from scratch. The product was designed to help DTC brands expand and scale their logistics operations across Europe and beyond, offering 24/48h delivery across Europe and managing Cash-on-Delivery where needed.",
       "achievements": [
         "Built a SaaS e-commerce platform from scratch, handling the shift from frontend (Next.js) to backend with AWS serverless",
         "Integrated legacy APIs under challenging conditions",
         "Onboarded and mentored junior developer, accelerating her ramp-up in React/Next.js and raising code quality across the team",
         "Led technical pivot as business focus changed, adapting architecture to new scaling needs"
       ],
-      "technologies": ["Next.js", "React", "Serverless", "Node.js", "JavaScript", "TypeScript", "AWS", "Vercel"],
+      "technologies": ["Next.js", "React", "Serverless", "Node.js", "TypeScript", "AWS", "MongoDB", "Vercel"],
       "link": "https://www.udroppy.com/"
     },
     {
@@ -164,11 +166,12 @@
       "location": "Zürich, Switzerland",
       "period": "Jun 2017 - Mar 2021",
       "type": "Full-time",
-      "description": "Developed full-stack banking solutions and marketing systems.",
+      "description": "Developed full-stack banking, payments, and mobility solutions for major Swiss clients (Credit Suisse, Clientis, CIC, SBB, SIX Payments) in agile SCRUM teams.",
       "achievements": [
-        "Developed full-stack banking solutions (Java/Spring, React) and marketing systems (Oracle, Kafka), improving feature delivery across teams",
-        "Initiated proof-of-concept visualizations with D3.js and Neo4j to support innovative client solutions",
-        "Maintained and modernized legacy applications (COBOL, Java, C++ testing)"
+        "Built and maintained front-end features for online banking platforms (Credit Suisse, Clientis, CIC) using React (Redux & Saga), TypeScript, and Spring-based backends, improving usability and delivery speed.",
+        "Worked on a linked mobility project for SBB, parsing raw mobility data and loading it into a Neo4j graph database to enable analysis of connected journeys.",
+        "Contributed to SIX Payments systems using COBOL, C++ and Java on Tandem NonStopSQL, adding features and reliability while introducing automated tests with JUnit and Mockito.",
+        "Supported marketing and data-driven solutions using Oracle, Kafka, and proof-of-concept visualizations with D3.js and Neo4j for innovative client use cases."
       ],
       "technologies": ["React", "Redux", "Saga", "Spring", "JavaScript", "TypeScript", "Java", "Docker", "Jenkins", "D3.js", "Neo4j", "Oracle", "Kafka"],
       "link": "https://www.ti8m.com/"
@@ -324,17 +327,17 @@
   "technicalSkills": {
     "frontend": {
       "category": "Frontend Development",
-      "description": "8+ years building production React/Next.js applications at ti&m, uDroppy, Tomorrow University, and A-List. Expert in modern UI/UX, state management, and performance optimization. Taught HTML/CSS/JavaScript to 20+ beginners, demonstrating deep understanding of web fundamentals.",
+      "description": "8+ years building production React/Next.js applications at ti&m, uDroppy, Tomorrow University, and the pre-incorporation A-List MVP. Expert in modern UI/UX, state management, and performance optimization. Taught HTML/CSS/JavaScript to 20+ beginners, demonstrating deep understanding of web fundamentals.",
       "skills": [
         {
           "name": "React",
           "level": 5,
-          "description": "Expert-level proficiency with 8+ years of experience. Built production applications at ti&m, uDroppy, Tomorrow University, and A-List. Deep knowledge of hooks, context, state management, and performance optimization."
+          "description": "Expert-level proficiency with 8+ years of experience. Built production applications at ti&m, uDroppy, Tomorrow University, and the pre-incorporation A-List MVP. Deep knowledge of hooks, context, state management, and performance optimization."
         },
         {
           "name": "Next.js",
           "level": 5,
-          "description": "Expert in Next.js with extensive experience building full-stack applications. Built MVPs for uDroppy SaaS platform and A-List talent platform. Proficient in SSR, SSG, API routes, and deployment optimization."
+          "description": "Expert in Next.js with extensive experience building full-stack applications. Built MVPs for uDroppy SaaS platform and the pre-incorporation A-List talent platform. Proficient in SSR, SSG, API routes, and deployment optimization."
         },
         {
           "name": "TypeScript",
@@ -370,7 +373,7 @@
         {
           "name": "Node.js",
           "level": 5,
-          "description": "Expert in Node.js backend development. Built serverless APIs with AWS Lambda, RESTful services, and real-time applications. Used in uDroppy, Tomorrow University (AI assistant), and A-List platforms."
+          "description": "Expert in Node.js backend development. Built serverless APIs with AWS Lambda, RESTful services, and real-time applications. Used in uDroppy, Tomorrow University (AI assistant), and the pre-incorporation A-List platform."
         },
         {
           "name": "Serverless",
@@ -432,12 +435,12 @@
     },
     "databases": {
       "category": "Databases & Data",
-      "description": "Built A-List platform MVP with Supabase for authentication and real-time features. Developed marketing systems with Oracle and Kafka at ti&m for event streaming. Initiated proof-of-concept with Neo4j graph database for innovative client solutions. Experience in database design, query optimization, and real-time data processing.",
+      "description": "Built the pre-incorporation A-List platform MVP with Supabase for authentication and real-time features. Developed marketing systems with Oracle and Kafka at ti&m for event streaming. Initiated proof-of-concept with Neo4j graph database for innovative client solutions. Experience in database design, query optimization, and real-time data processing.",
       "skills": [
         {
           "name": "Supabase",
           "level": 4.5,
-          "description": "Proficient in Supabase for backend-as-a-service. Built A-List talent platform MVP with Supabase, handling authentication, database, and real-time features for the community platform."
+          "description": "Proficient in Supabase for backend-as-a-service. Built the pre-incorporation A-List talent platform MVP with Supabase, handling authentication, database, and real-time features for the community platform."
         },
         {
           "name": "Neo4j",
@@ -453,48 +456,11 @@
           "name": "Oracle",
           "level": 3.5,
           "description": "Competent in Oracle databases. Developed marketing systems with Oracle at ti&m, including database design and query optimization for enterprise applications."
-        }
-      ]
-    },
-    "aiMl": {
-      "category": "AI & Machine Learning",
-      "description": "Drove implementation of AI virtual assistant 'Evo' at Tomorrow University, collaborating across product, design, and backend teams. Integrated Claude AI and Whisper into A-List platform for intelligent features and audio processing. Actively exploring AI/ML integration with focus on practical applications and user value.",
-      "skills": [
-        {
-          "name": "Claude AI",
-          "level": 4,
-          "description": "Proficient in integrating Claude AI into applications. Built A-List platform with Claude AI for intelligent features, focusing on post-hiring support and upskilling functionalities."
         },
         {
-          "name": "Whisper",
-          "level": 4,
-          "description": "Proficient in OpenAI Whisper for speech-to-text. Integrated Whisper into A-List platform for audio processing and transcription features in the talent/community platform."
-        },
-        {
-          "name": "AI/ML Integration",
-          "level": 4.5,
-          "description": "Proficient in AI/ML integration. Drove implementation of AI virtual assistant \"Evo\" at Tomorrow University, collaborating with product, design, and backend teams to deliver intelligent features."
-        }
-      ]
-    },
-    "iotEducation": {
-      "category": "IoT & Educational Tools",
-      "description": "Designed and delivered 3 innovative online learning challenges using Microbit and Thunkable at Tomorrow University (4.5/5 feedback). Delivered mobile hybrid features for IoT safety devices at Helpany (formerly Sedimentum AG). Strong background in robotics engineering (European Master in Advanced Robotics) applied to practical IoT education and device integration.",
-      "skills": [
-        {
-          "name": "Microbit",
-          "level": 4,
-          "description": "Proficient in Microbit for educational IoT projects. Designed and delivered innovative online learning challenges at Tomorrow University, using Microbit for hands-on IoT education with practical project experiences."
-        },
-        {
-          "name": "Thunkable",
-          "level": 4,
-          "description": "Proficient in Thunkable for no-code mobile app development in education. Used in Tomorrow University challenges to enable students to build mobile applications without traditional coding, fostering practical learning."
-        },
-        {
-          "name": "IoT Development",
-          "level": 4,
-          "description": "Proficient in IoT development. Delivered mobile hybrid features for IoT safety devices at Helpany (formerly Sedimentum AG), handling device integration, data processing, and mobile app connectivity."
+          "name": "MongoDB",
+          "level": 3.5,
+          "description": "Competent in MongoDB and document-oriented data modelling. Used alongside PostgreSQL/Strapi at Tomorrow University (MongoDB for core user/platform data, Strapi/PostgreSQL for structured content) and during development of the Borderl3ss platform while working at uDroppy."
         }
       ]
     }
